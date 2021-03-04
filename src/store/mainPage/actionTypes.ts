@@ -1,0 +1,1 @@
+export const MAIN_SET_LANGUAGE = "MAIN_SET_LANGUAGE";

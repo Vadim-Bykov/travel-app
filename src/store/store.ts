@@ -1,9 +1,11 @@
 import { applyMiddleware, combineReducers, createStore } from "redux";
 import thunkMiddleware from 'redux-thunk';
 import dialogReducer from "./testReducer/reducer";
+import mainReducer from "./mainPage/reducer";
 
 const rootReducers = combineReducers({
    testPage: dialogReducer,
+   main: mainReducer
 });
 
 type RootReducersType = typeof rootReducers;
