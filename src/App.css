@@ -1,4 +1,7 @@
 .App {
   text-align: center;
+  display: grid;
+  align-content: space-between;
+  height: 100vh;
 }
 

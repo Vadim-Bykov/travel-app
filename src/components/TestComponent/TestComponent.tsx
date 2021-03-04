@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { connect } from 'react-redux';
-import { AppStateType } from '../../store/strore';
+import { AppStateType } from '../../store/store';
 import { addMessageActionCreator } from '../../store/testReducer/actions';
 import { getDialogs, getMessages } from '../../store/testReducer/selectors';
 import style from './TestComponent.module.scss'
