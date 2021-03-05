@@ -1,4 +1,4 @@
-import { CountriesType, LangType } from "../../store/mainPage/state";
+import { CountriesType, LangType } from "../../store/mainPage/types";
 
 export type MapStatePropsType = {
    countries: Array<CountriesType>

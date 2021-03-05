@@ -1,12 +1,14 @@
-import { MAIN_SET_LANGUAGE } from "./actionTypes";
+import * as actionTypes from "./actionTypes";
+import * as types from "./types";
 
-type SetLanguageActionType = {
-   type: typeof MAIN_SET_LANGUAGE
-   curLang: string
-};
+
  
-export const setLanguage = (curLang: string): SetLanguageActionType => {
-   return { type: MAIN_SET_LANGUAGE, curLang };
-};
+export const setLanguage = (curLang: string): types.SetLanguageActionType => ({
+   type: actionTypes.MAIN_SET_LANGUAGE,
+   curLang
+});
 
-export type ActionsTypes = SetLanguageActionType;
+export const setCountriesData = (countries: Array<types.CountriesType>): types.SetCountriesDataType => ({
+   type: actionTypes.MAIN_SET_COUNTRIES_DATA,
+   countries
+})

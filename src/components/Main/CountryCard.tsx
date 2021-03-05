@@ -5,14 +5,9 @@ import { CardPropsType } from './Types';
 
 const CountryCard:React.FC<CardPropsType> = ({country, curLang, cardBtnTitle}) => {
 
-   // const styles = {
-   //    background: `url(${country.mainPhoto})`
-   // }
-
    return (
       <div className={cn("card", style.card)}>
          <img className={cn("card-img-top", style.img)} src={country.mainPhoto} alt="Card"></img>
-         {/* <div style={styles} className={cn("card-img-top", style.img)}></div> */}
          <div className="card-body">
             <h5 className="card-title">{country.name[curLang]}</h5>
             <p className="card-text">{country.capital[curLang]}</p>
