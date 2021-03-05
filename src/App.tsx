@@ -6,7 +6,6 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import TestComponent from './components/TestComponent/TestComponent';
-import { TestComponentJS } from './components/TestComponent/TestComponentJS';
 import store from './store/store';
 
 const MainComponent = () => {

@@ -1,4 +1,3 @@
-import { type } from 'os';
 import { MAIN_SET_LANGUAGE } from "./actionTypes";
 
 type SetLanguageActionType = {
