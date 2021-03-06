@@ -7,7 +7,6 @@ import beijing from '../assets/img/beijing.jpg';
 import tokyo from '../assets/img/tokyo.jpg';
 import washington from '../assets/img/washington.jpg';
 
-
 const data = {
   countries: [
     {
@@ -15,14 +14,14 @@ const data = {
       name: {
         en: 'Russia',
         ru: 'Россия',
-        de: 'Russland'
+        de: 'Russland',
       },
       capital: {
         en: 'Moscow',
         ru: 'Москва',
-        de: 'Moskau'
+        de: 'Moskau',
       },
-      mainPhoto: moscow
+      mainPhoto: moscow,
     },
 
     {
@@ -30,14 +29,14 @@ const data = {
       name: {
         en: 'Belarus',
         ru: 'Беларусь',
-        de: 'Weißrussland'
+        de: 'Weißrussland',
       },
       capital: {
         en: 'Minsk',
         ru: 'Минск',
-        de: 'Minsk'
+        de: 'Minsk',
       },
-      mainPhoto: minsk
+      mainPhoto: minsk,
     },
 
     {
@@ -45,14 +44,14 @@ const data = {
       name: {
         en: 'England',
         ru: 'Англия',
-        de: 'England'
+        de: 'England',
       },
       capital: {
         en: 'London',
         ru: 'Лондон',
-        de: 'London'
+        de: 'London',
       },
-      mainPhoto: london
+      mainPhoto: london,
     },
 
     {
@@ -60,14 +59,14 @@ const data = {
       name: {
         en: 'Germany',
         ru: 'Германия',
-        de: 'Deutschland'
+        de: 'Deutschland',
       },
       capital: {
         en: 'Berlin',
         ru: 'Берлин',
-        de: 'Berlin'
+        de: 'Berlin',
       },
-      mainPhoto: berlin
+      mainPhoto: berlin,
     },
 
     {
@@ -75,14 +74,14 @@ const data = {
       name: {
         en: 'France',
         ru: 'Франция',
-        de: 'Frankreich'
+        de: 'Frankreich',
       },
       capital: {
         en: 'Paris',
         ru: 'Париж',
-        de: 'Paris'
+        de: 'Paris',
       },
-      mainPhoto: paris
+      mainPhoto: paris,
     },
 
     {
@@ -90,14 +89,14 @@ const data = {
       name: {
         en: 'China',
         ru: 'Китай',
-        de: 'China'
+        de: 'China',
       },
       capital: {
         en: 'Beijing',
         ru: 'Пекин',
-        de: 'Peking'
+        de: 'Peking',
       },
-      mainPhoto: beijing
+      mainPhoto: beijing,
     },
 
     {
@@ -105,33 +104,33 @@ const data = {
       name: {
         en: 'USA',
         ru: 'США',
-        de: 'USA'
+        de: 'USA',
       },
       capital: {
         en: 'Washington',
         ru: 'Вашингтон',
-        de: 'Washington'
+        de: 'Washington',
       },
-      mainPhoto: tokyo
+      mainPhoto: tokyo,
     },
-    
+
     {
       id: 8,
       name: {
         en: 'Japan',
         ru: 'Япония',
-        de: 'Japan'
+        de: 'Japan',
       },
       capital: {
         en: 'Tokyo',
         ru: 'Токио',
-        de: 'Tokio'
+        de: 'Tokio',
       },
-      mainPhoto: washington
+      mainPhoto: washington,
     },
   ],
 
-  curLang: 'en'
+  curLang: 'en',
 };
 
 export default data;

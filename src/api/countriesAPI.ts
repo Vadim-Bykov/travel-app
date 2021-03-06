@@ -1,4 +1,4 @@
-import data from "../data/data"
+import data from "../data/dataBack"
 import { CountriesType } from "../store/mainPage/types";
 
 export const getCountriesAPI = (): Array<CountriesType> => data.countries;

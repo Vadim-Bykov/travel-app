@@ -9,7 +9,7 @@ import store from './store/store';
 
 const MainComponent = () => {
   return (
-    <div className='App' >
+    <div className='App'>
       <Header />
       <Switch>
         <Route exact path='/:id?' render={() => <Main />} />
@@ -30,6 +30,6 @@ function App() {
       </BrowserRouter>
     </Provider>
   );
-};
+}
 
 export default App;

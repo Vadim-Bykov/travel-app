@@ -1,7 +1,6 @@
-import { CountriesType, LangType } from "../../store/mainPage/types";
+import { CountriesType } from '../../store/mainPage/types';
 
 export type CardPropsType = {
-   country: CountriesType
-   curLang: string
-   cardBtnTitle: LangType
+  country: CountriesType;
+  curLang: string;
 };
