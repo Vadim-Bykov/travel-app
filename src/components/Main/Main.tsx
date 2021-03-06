@@ -1,23 +1,25 @@
 import { useEffect } from 'react';
-import { connect, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { useDispatchThunk } from '../../store/store';
 import { requestCountriesData, requestLanguage } from '../../store/mainPage/operations';
 import { getCardBtnTitle, getCountries, getCurLang } from '../../store/mainPage/selectors';
-import { CountriesType } from '../../store/mainPage/types';
-import { AppStateType } from '../../store/store';
+import { CountriesType, LangType } from '../../store/mainPage/types';
 import CountryCard from './CountryCard';
 import style from './Main.module.scss'
-import { MapStatePropsType, PropsType } from './Types';
 
 
 
-const Main: React.FC<PropsType> = ({ countries, curLang, cardBtnTitle }) => {
+const Main = () => {
+   const countries: Array<CountriesType> = useSelector(getCountries);
+   const curLang: string = useSelector(getCurLang);
+   const cardBtnTitle: LangType = useSelector(getCardBtnTitle);
 
-   const dispatch = useDispatch();
+   const dispatch = useDispatchThunk();
 
    useEffect(() => {
       dispatch(requestCountriesData())
       dispatch(requestLanguage())
-   }, []);
+   }, [dispatch]);
 
    const countryCards = countries.map((country: CountriesType) => <CountryCard
       key={country.id}
@@ -33,10 +35,4 @@ const Main: React.FC<PropsType> = ({ countries, curLang, cardBtnTitle }) => {
    );
 };
 
-const mapStateToProps = (state: AppStateType): MapStatePropsType => ({
-   countries: getCountries(state),
-   curLang: getCurLang(state),
-   cardBtnTitle: getCardBtnTitle(state)
-});
-
-export default connect(mapStateToProps)(Main);
+export default Main;

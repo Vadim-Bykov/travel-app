@@ -1,15 +1,15 @@
-import { applyMiddleware, combineReducers, createStore } from "redux";
-import thunkMiddleware from 'redux-thunk';
-import dialogReducer from "./testReducer/reducer";
+import { Action, applyMiddleware, combineReducers, createStore } from "redux";
+import thunkMiddleware, { ThunkDispatch } from 'redux-thunk';
+import { reducer as formReducer } from 'redux-form';
 import mainReducer from "./mainPage/reducer";
+import { useDispatch } from "react-redux";
 
 const rootReducers = combineReducers({
-   testPage: dialogReducer,
-   main: mainReducer
+   main: mainReducer,
+   form: formReducer,
 });
 
 type RootReducersType = typeof rootReducers;
-
 export type AppStateType = ReturnType<RootReducersType>;
 
 // @ts-ignore
@@ -19,5 +19,10 @@ const store = createStore(
    rootReducers,
    composeEnhancers(applyMiddleware(thunkMiddleware))
 );
+
+export type AppDispatchType = typeof store.dispatch;
+export const useDispatchAction = () => useDispatch<AppDispatchType>();
+
+export const useDispatchThunk = () => useDispatch<ThunkDispatch<AppStateType, {}, Action<string>>>();
 
 export default store;
