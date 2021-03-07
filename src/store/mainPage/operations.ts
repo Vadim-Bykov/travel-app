@@ -1,13 +1,18 @@
-import { getCountriesAPI, getLanguageAPI } from './../../api/countriesAPI';
-import { setCountriesData, setLanguage } from './actions';
+import * as api from './../../api/countriesAPI';
+import * as actions from './actions';
 import { ThunkType } from './types';
 
 export const requestCountriesData = (): ThunkType => (dispatch) => {
-  const countries = getCountriesAPI();
-  dispatch(setCountriesData(countries));
+  const countries = api.getCountriesAPI();
+  dispatch(actions.setCountriesData(countries));
 };
 
 export const requestLanguage = (): ThunkType => (dispatch) => {
-  const curLang = getLanguageAPI();
-  dispatch(setLanguage(curLang));
+  const curLang = api.getLanguageAPI();
+  dispatch(actions.setLanguage(curLang));
+};
+
+export const changeLanguage = (lang: string): ThunkType => (dispatch) => {
+  api.setLanguageAPI(lang);
+  dispatch(actions.setLanguage(lang));
 };
