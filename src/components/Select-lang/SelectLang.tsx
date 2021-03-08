@@ -4,7 +4,6 @@ import style from './SelectLang.module.scss';
 import { OnChangeSelect, SelectPropsType } from './Types';
 import { selectLangValue } from '../../data/dataFront';
 import { LangType } from '../../store/mainPage/types';
-// import cn from 'classnames';
 
 const SelectLang: React.FC<SelectPropsType> = ({ curLang }) => {
   const dispatch = useDispatchThunk();

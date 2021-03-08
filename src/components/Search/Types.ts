@@ -1,4 +1,5 @@
 import { RouteComponentProps } from 'react-router';
+import { CountriesType } from '../../store/mainPage/types';
 
 type SearchOwnPropsType = {
   curLang: string;
@@ -15,3 +16,8 @@ export type SearchPropsType = SearchOwnPropsType & UrlProps;
 export type SearchInputType = (
   event: React.ChangeEvent<HTMLInputElement>
 ) => void;
+
+export type GetAppropriatedCardsType = (
+  e: React.ChangeEvent<HTMLInputElement>,
+  curLang: string
+) => Array<CountriesType>;

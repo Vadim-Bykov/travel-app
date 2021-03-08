@@ -1,3 +1,5 @@
+import { CountriesType } from '../store/mainPage/types';
+
 export const cardBtnTitle = {
   en: 'Learn more',
   ru: 'Узнать больше',
@@ -15,3 +17,5 @@ export const selectLangValue = [
   { en: 'ru', ru: 'рус', de: 'rus' },
   { en: 'de', ru: 'нем', de: 'deu' },
 ];
+
+export let countriesCopy: Array<CountriesType> = [];

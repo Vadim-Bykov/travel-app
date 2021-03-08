@@ -3,18 +3,29 @@ import cn from 'classnames';
 import { searchText } from '../../data/dataFront';
 import { LangType } from '../../store/mainPage/types';
 import { SearchInputType, SearchPropsType } from './Types';
-import React, { useState } from 'react';
+import React, { KeyboardEventHandler, useRef, useState } from 'react';
 import { withRouter } from 'react-router';
+import { getAppropriatedCards } from './utills';
+import { useDispatchAction } from '../../store/store';
+import { setCountriesData } from '../../store/mainPage/actions';
 
 const Search: React.FC<SearchPropsType> = ({ curLang, history }) => {
-  const isMainPage: boolean = history.location.pathname === '/';
-
+  const dispatch = useDispatchAction();
+  const inputRef = useRef<HTMLInputElement>(null);
   const [text, setText] = useState('');
+
+  const isMainPage: boolean = history.location.pathname === '/';
+  const curSearchText: LangType = searchText;
+
   const onChangeText: SearchInputType = (event) => {
     setText(event.target.value);
+    const appropriatedCards = getAppropriatedCards(event, curLang);
+    dispatch(setCountriesData(appropriatedCards));
   };
 
-  const curSearchText: LangType = searchText;
+  const onPressEnter: KeyboardEventHandler = (e) => {
+    e.key === 'Enter' && inputRef.current?.blur();
+  };
 
   return (
     <div className={style.searchBlock}>
@@ -27,6 +38,8 @@ const Search: React.FC<SearchPropsType> = ({ curLang, history }) => {
             value={text}
             onChange={onChangeText}
             autoFocus={true}
+            ref={inputRef}
+            onKeyPress={onPressEnter}
           ></input>
           <button
             className={cn('btn btn-outline-success my-2 my-sm-0', style.btn)}

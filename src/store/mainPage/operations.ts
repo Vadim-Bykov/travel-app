@@ -1,14 +1,16 @@
+import { countriesCopy } from './../../data/dataFront';
 import * as api from './../../api/countriesAPI';
 import * as actions from './actions';
-import { ThunkType } from './types';
+import { CountriesType, ThunkType } from './types';
 
 export const requestCountriesData = (): ThunkType => (dispatch) => {
-  const countries = api.getCountriesAPI();
+  const countries:Array<CountriesType> = api.getCountriesAPI();
   dispatch(actions.setCountriesData(countries));
+  countriesCopy.push(...countries);
 };
 
 export const requestLanguage = (): ThunkType => (dispatch) => {
-  const curLang = api.getLanguageAPI();
+  const curLang: string = api.getLanguageAPI();
   dispatch(actions.setLanguage(curLang));
 };
 
