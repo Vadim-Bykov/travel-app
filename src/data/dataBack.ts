@@ -134,3 +134,11 @@ const data = {
 };
 
 export default data;
+
+
+export const authData = {
+  userName: null,
+  email: null,
+  password: null,
+  isAuth: false,
+};
