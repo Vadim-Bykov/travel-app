@@ -1,9 +1,22 @@
-.header{
-   height: 80px;
-   background-color: #34C9ED;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding-right: 15px;
+.header {
+  height: 80px;
+  background-color: #34c9ed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
 }
 
+.infoBlock {
+  color: white;
+}
+
+.loginInfo {
+  display: grid;
+
+  button {
+    background-color: #ffc107;
+    color: red;
+    border-radius: 5px;
+  }
+}
