@@ -12,13 +12,15 @@ const Header: React.FC = () => {
   const curLang: string = useSelector(getCurLang);
 
   return (
-    <header className={style.header}>
+    <header className={ style.header }>
       <NavLink to='/'>
-        <img className={style.logo} src={logo} alt='logo' />
+        <img className={ style.logo } src={ logo } alt='logo' />
       </NavLink>
-      <Search curLang={curLang} />
-      <SelectLang curLang={curLang} />
-      <HeaderLogin/>
+      <Search curLang={ curLang } />
+      <div className={style.rightPart} >
+        <SelectLang curLang={ curLang } />
+        <HeaderLogin />
+      </div>
     </header>
   );
 };

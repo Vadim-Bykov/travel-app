@@ -7,16 +7,21 @@
   padding-right: 15px;
 }
 
-.infoBlock {
-  color: white;
+.rightPart {
+  display: flex;
+  align-items: center;
 }
 
-.loginInfo {
-  display: grid;
+.infoBlock {
+  color: white;
 
-  button {
-    background-color: #ffc107;
-    color: red;
-    border-radius: 5px;
+  .loginInfo {
+    display: grid;
+
+    button {
+      background-color: #000;
+      color: red;
+      border-radius: 5px;
+    }
   }
 }

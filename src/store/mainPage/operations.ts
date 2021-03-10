@@ -4,9 +4,9 @@ import * as actions from './actions';
 import { CountriesType, ThunkType } from './types';
 
 export const requestCountriesData = (): ThunkType => (dispatch) => {
-  const countries:Array<CountriesType> = api.getCountriesAPI();
+  const countries: Array<CountriesType> = api.getCountriesAPI();
   dispatch(actions.setCountriesData(countries));
-  countriesCopy.push(...countries);
+  if (!countriesCopy.length) countriesCopy.push(...countries);
 };
 
 export const requestLanguage = (): ThunkType => (dispatch) => {

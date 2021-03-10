@@ -6,6 +6,7 @@ import { getCurLang } from '../../store/mainPage/selectors';
 import { getIsAuth, getUserName } from '../../store/auth/selectors';
 import { useDispatchAction } from '../../store/store';
 import { resetUserData } from '../../store/auth/actions';
+import { loginData } from '../../data/dataFront';
 
 const HeaderLogin: React.FC = () => {
 
@@ -21,9 +22,9 @@ const HeaderLogin: React.FC = () => {
        {isAuth
           ? <div className={style.loginInfo} >
              <span>{userName}</span>
-             <button onClick={logout} >logout</button>
+               <button onClick={ logout } >{loginData.logout[curLang]}</button>
           </div>
-          : <NavLink to='/login' >Login</NavLink>}
+            : <NavLink to='/login' >{loginData.login[curLang]}</NavLink>}
     </div>
  );
 };
