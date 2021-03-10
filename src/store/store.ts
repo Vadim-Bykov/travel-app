@@ -3,11 +3,9 @@ import thunkMiddleware, { ThunkDispatch } from 'redux-thunk';
 import { reducer as formReducer } from 'redux-form';
 import mainReducer from './mainPage/reducer';
 import { useDispatch } from 'react-redux';
-import authReducer from './auth/reducer';
 
 const rootReducers = combineReducers({
   main: mainReducer,
-  auth: authReducer,
   form: formReducer,
 });
 
@@ -25,7 +23,6 @@ const store = createStore(
 export type AppDispatchType = typeof store.dispatch;
 export const useDispatchAction = () => useDispatch<AppDispatchType>();
 
-export const useDispatchThunk = () =>
-  useDispatch<ThunkDispatch<AppStateType, {}, Action<string>>>();
+export const useDispatchThunk = () => useDispatch<ThunkDispatch<AppStateType, {}, Action<string>>>();
 
 export default store;
