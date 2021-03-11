@@ -3,11 +3,7 @@ import cn from 'classnames';
 import { searchText } from '../../data/dataFront';
 import { LangType } from '../../store/mainPage/types';
 import { SearchInputType, SearchPropsType } from './Types';
-import React, {
-  KeyboardEventHandler,
-  useRef,
-  useState,
-} from 'react';
+import React, { KeyboardEventHandler, useRef, useState } from 'react';
 import { withRouter } from 'react-router';
 import { getAppropriatedCards } from './utills';
 import { useDispatchAction } from '../../store/store';

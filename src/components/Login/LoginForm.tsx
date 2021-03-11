@@ -7,10 +7,11 @@ import { UserDataType } from '../../store/auth/types';
 import { useSelector } from 'react-redux';
 import { getCurLang } from '../../store/mainPage/selectors';
 import { loginData } from '../../data/dataFront';
+import { ValidatorsType } from './Types';
 
-const maxLength20 = maxLength(20);
-const minLength6 = minLength(6);
-const minLength4 = minLength(4);
+const maxLength20: ValidatorsType = maxLength(20);
+const minLength6: ValidatorsType = minLength(6);
+const minLength4: ValidatorsType = minLength(4);
 
 const LoginForm: React.FC<InjectedFormProps<UserDataType>> = ({
   handleSubmit,
