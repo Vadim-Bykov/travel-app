@@ -132,8 +132,6 @@ const data = {
 
   curLang: 'en',
 
-  users: [{}],
-
   userData: {},
 };
 
