@@ -131,6 +131,8 @@ const data = {
   ],
 
   curLang: 'en',
+
+  userData: {},
 };
 
 export default data;

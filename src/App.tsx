@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch, withRouter } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import Login from './components/Login/Login';
 import Main from './components/Main/Main';
 import store from './store/store';
 
@@ -12,6 +13,7 @@ const MainComponent = () => {
     <div className='App'>
       <Header />
       <Switch>
+        <Route path='/login' render={() => <Login />} />
         <Route exact path='/:id?' render={() => <Main />} />
         <Route path='*' exact render={() => <h1>404 NOT FOUND</h1>} />
       </Switch>
