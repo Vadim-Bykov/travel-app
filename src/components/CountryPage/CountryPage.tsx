@@ -8,6 +8,7 @@ import { getCountryData } from '../../store/countryPage/selectors';
 import { CountryDataType } from '../../store/countryPage/types';
 import { getCurLang } from '../../store/mainPage/selectors';
 import cn from 'classnames';
+import Slider from '../Slider/Slider';
 
 const CountryPage: React.FC<ParamsType> = ({ id }) => {
   const curLang = useSelector(getCurLang);
@@ -20,11 +21,11 @@ const CountryPage: React.FC<ParamsType> = ({ id }) => {
   const carouselItems =
     countryData.sightseeings &&
     countryData.sightseeings.map((item, i) => (
-      <div className={cn('carousel-item active', { [(i = 0)]: 'active' })}>
-        <img src={item.img} alt={item.name[curLang]}></img>
+      <div key={item.name[curLang]} className={cn('carousel-item', {['active']: i===0 })}>
+        <img className='d-block w-100' src={item.img} alt={item.name[curLang]}></img>
         <div className='carousel-caption d-none d-md-block'>
-          <h5>{item.name[curLang]}</h5>
-          <p>{item.shortInfo[curLang]}</p>
+          {/* <h5>{item.name[curLang]}</h5>
+          <p>{item.shortInfo[curLang]}</p> */}
         </div>
       </div>
     ));
@@ -38,75 +39,7 @@ const CountryPage: React.FC<ParamsType> = ({ id }) => {
           <h3>{countryData.capital[curLang]}</h3>
           <div>{countryData.shortInfo[curLang]}</div>
 
-          <div
-            id='carouselExampleIndicators'
-            className='carousel slide'
-            data-ride='carousel'
-          >
-            <ol className='carousel-indicators'>
-              <li
-                data-target='#carouselExampleIndicators'
-                data-slide-to='0'
-                className='active'
-              ></li>
-              <li
-                data-target='#carouselExampleIndicators'
-                data-slide-to='1'
-              ></li>
-              <li
-                data-target='#carouselExampleIndicators'
-                data-slide-to='2'
-              ></li>
-            </ol>
-            <div className='carousel-inner'>
-              {carouselItems}
-              {/* <div className='carousel-item active'>
-                <img
-                  className='d-block w-100'
-                  src='...'
-                  alt='First slide'
-                ></img>
-              </div>
-              <div className='carousel-item'>
-                <img
-                  className='d-block w-100'
-                  src='...'
-                  alt='Second slide'
-                ></img>
-              </div>
-              <div className='carousel-item'>
-                <img
-                  className='d-block w-100'
-                  src='...'
-                  alt='Third slide'
-                ></img>
-              </div> */}
-            </div>
-            <a
-              className='carousel-control-prev'
-              href='#carouselExampleIndicators'
-              role='button'
-              data-slide='prev'
-            >
-              <span
-                className='carousel-control-prev-icon'
-                aria-hidden='true'
-              ></span>
-              <span className='sr-only'>Previous</span>
-            </a>
-            <a
-              className='carousel-control-next'
-              href='#carouselExampleIndicators'
-              role='button'
-              data-slide='next'
-            >
-              <span
-                className='carousel-control-next-icon'
-                aria-hidden='true'
-              ></span>
-              <span className='sr-only'>Next</span>
-            </a>
-          </div>
+          <Slider curLang={curLang} sightseeings={countryData.sightseeings} />
         </div>
       )}
     </>
