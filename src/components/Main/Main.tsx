@@ -9,10 +9,15 @@ import { getCountries, getCurLang } from '../../store/mainPage/selectors';
 import { CountriesType } from '../../store/mainPage/types';
 import CountryCard from './CountryCard';
 import style from './Main.module.scss';
+import { useParams } from 'react-router';
+import CountryPage from '../CountryPage/CountryPage';
+import { ParamsType } from '../CountryPage/Types';
 
-const Main = () => {
+
+const Main: React.FC = () => {
   const countries: Array<CountriesType> = useSelector(getCountries);
   const curLang: string = useSelector(getCurLang);
+  const { id } = useParams<ParamsType>();
 
   const dispatch = useDispatchThunk();
 
@@ -25,7 +30,11 @@ const Main = () => {
     <CountryCard key={country.id} country={country} curLang={curLang} />
   ));
 
-  return <main className={style.main}>{countryCards}</main>;
+  return (
+    <>
+      {id ? <CountryPage id={id} /> : <main className={style.main}>{countryCards}</main>}
+    </>
+  );
 };
 
 export default Main;
