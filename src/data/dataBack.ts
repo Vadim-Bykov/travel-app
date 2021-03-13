@@ -2,10 +2,10 @@ import moscow from '../assets/img/moscow.jpg';
 import minsk from '../assets/img/minsk.jpg';
 import london from '../assets/img/london.jpg';
 import berlin from '../assets/img/berlin.jpg';
-// import paris from '../assets/img/paris.jpg';
-// import beijing from '../assets/img/beijing.jpg';
-// import tokyo from '../assets/img/tokyo.jpg';
-// import washington from '../assets/img/washington.jpg';
+import paris from '../assets/img/paris.jpg';
+import beijing from '../assets/img/beijing.jpg';
+import tokyo from '../assets/img/tokyo.jpg';
+import washington from '../assets/img/washington.jpg';
 
 import videoRussiaRU from '../assets/video/russiaRU.mp4';
 import videoRussiaEN from '../assets/video/russiaEN.mp4';
@@ -44,6 +44,34 @@ import brandenburgGate from '../assets/dataimg/BrandenburgGate.jpg';
 import blackForest from '../assets/dataimg/blackforest.jpg';
 import museumIsland from '../assets/dataimg/MuseumIsland.jpg';
 import berlinWall from '../assets/dataimg/BerlinWall.jpg';
+
+import eiffelTower from '../assets/dataimg/EiffelTower.jpg';
+import louvre from '../assets/dataimg/Louvre.jpg';
+import versailles from '../assets/dataimg/Versailles.jpg';
+import azure from '../assets/dataimg/Azure.jpg';
+import fontainebleau from '../assets/dataimg/Fontainebleau.jpg';
+import disneyland from '../assets/dataimg/Disneyland.jpg';
+
+import greatWall from '../assets/dataimg/GreatWall.jpg';
+import potalaPalace from '../assets/dataimg/PotalaPalace.jpg';
+import terracottaArmy from '../assets/dataimg/TerracottaArmy.jpg';
+import giantBuddha from '../assets/dataimg/GiantBuddha.jpg';
+import hongKong from '../assets/dataimg/HongKong.jpg';
+import shaolin from '../assets/dataimg/Shaolin.jpg';
+
+import statueofLiberty from '../assets/dataimg/StatueofLiberty.jpg';
+import centralPark from '../assets/dataimg/CentralPark.jpg';
+import chinaTown from '../assets/dataimg/ChinaTown.jpg';
+import whiteHouse from '../assets/dataimg/WhiteHouse.jpg';
+import pentagon from '../assets/dataimg/Pentagon.jpg';
+import lasVegas from '../assets/dataimg/LasVegas.jpg';
+
+import fushimiInariShrine from '../assets/dataimg/Fushimiinarishrine.jpg';
+import skyTree from '../assets/dataimg/skytree.jpg';
+import odaiba from '../assets/dataimg/Odaiba.jpg';
+import asakusa from '../assets/dataimg/Asakusa.jpg';
+import fuji from '../assets/dataimg/Fuji.jpg';
+import goldenPavilion from '../assets/dataimg/GoldenPavilion.jpg';
 
 const data = {
   countries: [
@@ -535,65 +563,481 @@ const data = {
       ],
     },
 
-    // {
-    //   id: 5,
-    //   name: {
-    //     en: 'France',
-    //     ru: 'Франция',
-    //     de: 'Frankreich',
-    //   },
-    //   capital: {
-    //     en: 'Paris',
-    //     ru: 'Париж',
-    //     de: 'Paris',
-    //   },
-    //   mainPhoto: paris,
-    // },
+    {
+      id: 5,
+      name: {
+        en: 'France',
+        ru: 'Франция',
+        de: 'Frankreich',
+      },
+      capital: {
+        en: 'Paris',
+        ru: 'Париж',
+        de: 'Paris',
+      },
+      mainPhoto: paris,
 
-    // {
-    //   id: 6,
-    //   name: {
-    //     en: 'China',
-    //     ru: 'Китай',
-    //     de: 'China',
-    //   },
-    //   capital: {
-    //     en: 'Beijing',
-    //     ru: 'Пекин',
-    //     de: 'Peking',
-    //   },
-    //   mainPhoto: beijing,
-    // },
+      shortInfo: {
+        en:
+          'France is a transcontinental state that includes the main territory in Western Europe and a number of overseas regions and territories. The population is 62 814 233 people in the metropolis and 67 848 156 people - including overseas possessions.',
+        ru:
+          'Франция — трансконтинентальное государство, включающее основную территорию в Западной Европе и ряд заморских регионов и территорий. Население — 62 814 233 человек в метрополии и 67 848 156 человек — с учётом заморских владений.',
+        de:
+          'Frankreich ist ein transkontinentaler Staat, der das Hauptgebiet Westeuropas und eine Reihe von Regionen und Gebieten in Übersee umfasst. Die Bevölkerung beträgt 62 814 233 Menschen in der Metropole und 67 848 156 Menschen - einschließlich ausländischer Besitztümer.',
+      },
+      video: {
+        en: '',
+        ru: '',
+        de: '',
+      },
+      sightseeings: [
+        {
+          img: eiffelTower,
+          name: {
+            en: 'The Eiffel Tower',
+            ru: 'Эйфелева башня',
+            de: 'Der Eiffelturm',
+          },
+          shortInfo: {
+            en:
+              'Now the Eiffel Tower has gained worldwide fame, and once it caused a mixed reaction among Parisians. While the guests of the city admired the monumentality of this structure, many residents, shocked by the size of the tower, were against its presence in the city and more than once demanded that the authorities dismantle this structure.',
+            ru:
+              'Сейчас башня Эйфеля снискала мировую известность, а когда-то она вызывала неоднозначную реакцию среди парижан. В то время, как гости города восхищались монументальностью этого сооружения, многие жители, потрясённые размерами башни, были против её присутствия в городе и не раз требовали от властей разобрать это сооружение.',
+            de:
+              'Jetzt hat der Eiffelturm weltweite Bekanntheit erlangt und einmal eine zweideutige Reaktion unter den Parisern ausgelöst. Während die Gäste der Stadt die Monumentalität dieses Bauwerks bewunderten, waren viele Einwohner, die von der Größe des Turms schockiert waren, gegen seine Präsenz in der Stadt und forderten mehr als einmal den Abbau dieses Bauwerks durch die Behörden.',
+          },
+        },
+        {
+          img: louvre,
+          name: { en: 'Louvre', ru: 'Лувр', de: 'Louvre' },
+          shortInfo: {
+            en:
+              'A former fortress, once a palace, and now a museum - the Louvre in Paris has experienced all these transformations in its lifetime, becoming the most visited museum, where millions of people from all over the world come every year. The most distant past and present are intertwined here into a single whole in hundreds of thousands of exhibits, of which only 35 thousand we can see with our own eyes.',
+            ru:
+              'Бывшая крепость, некогда дворец, а теперь музей — все эти перевоплощения пережил на своём веку Лувр в Париже, ставший самым посещаемым музеем, куда ежегодно приезжают миллионы людей со всего мира. Самое далёкое прошлое и настоящее сплелись здесь в единое целое в сотнях тысяч экспонатов, из которых лишь 35 тысяч мы можем увидеть своими глазами.',
+            de:
+              'Eine ehemalige Festung, einst ein Palast und heute ein Museum - der Louvre in Paris hat all diese Veränderungen in seinem Leben erlebt und ist zum meistbesuchten Museum geworden, in das jedes Jahr Millionen von Menschen aus aller Welt kommen. Die entfernteste Vergangenheit und Gegenwart sind hier in Hunderttausenden von Exponaten zu einem Ganzen verflochten, von denen wir nur 35.000 mit eigenen Augen sehen können.',
+          },
+        },
+        {
+          img: versailles,
+          name: {
+            en: 'Palace of Versailles',
+            ru: 'Версальский дворец',
+            de: 'Schloss von Versailles',
+          },
+          shortInfo: {
+            en:
+              'The Versailles Palace is an outstanding masterpiece in the history of world architecture. The layout of the Palace of Versailles park also represents the highest achievement in park art in France. Magnificent compositions of gardens and alleys, exquisite greenhouses full of diverse vegetation, picturesque fountains of the Palace of Versailles - all this became a real standard in European architecture in the 18th century.',
+            ru:
+              'Версальский дворец — выдающийся шедевр в истории мирового зодчества. Планировка парка Версальского дворца также являет собой высшее достижение в парковом искусстве Франции. Великолепные композиции садов и аллей, изысканные оранжереи, полные разнообразной растительности, живописные фонтаны Версальского дворца — всё это стало настоящим эталоном в архитектуре Европы в 18 веке.',
+            de:
+              'Das Schloss Versailles ist ein herausragendes Meisterwerk in der Geschichte der Weltarchitektur. Die Gestaltung des Parks des Schlosses von Versailles ist auch die höchste Errungenschaft in der Parkkunst in Frankreich. Prächtige Kompositionen aus Gärten und Gassen, exquisite Gewächshäuser voller vielfältiger Vegetation, malerische Brunnen des Schlosses von Versailles - all dies wurde im 18. Jahrhundert zu einem echten Standard in der europäischen Architektur.',
+          },
+        },
+        {
+          img: azure,
+          name: {
+            en: "Cote d'Azur'",
+            ru: 'Лазурный берег',
+            de: "Cote d'Azur'",
+          },
+          shortInfo: {
+            en:
+              "The Cote d'Azur is not just a tourist attraction in France and a place of excellent rest, but also a land of amazing contrasts. For example, warm sunny beaches contrast with the snow-capped coastal Alps.",
+            ru:
+              'Лазурный берег — это не просто излюбленная многими туристами достопримечательность Франции и место отличного отдыха, но и земля удивительных контрастов. Так, например, тёплые солнечные пляжи здесь контрастируют с заснеженными приморскими Альпами',
+            de:
+              "Die Côte d'Azur ist nicht nur eine Touristenattraktion in Frankreich und ein Ort der hervorragenden Erholung, sondern auch ein Land der erstaunlichen Kontraste. Zum Beispiel stehen warme, sonnige Strände im Kontrast zu den schneebedeckten Küstenalpen.",
+          },
+        },
+        {
+          img: fontainebleau,
+          name: {
+            en: 'Fontainebleau palace',
+            ru: 'Дворец Фонтенбло',
+            de: 'Fontainebleau Palast',
+          },
+          shortInfo: {
+            en:
+              'The structure includes both graceful turrets and squat buildings, so the residence is often compared with wine glasses of different shapes and heights. The very name of the palace translates as "beautiful fountain" and comes from the name of the spring from which Napoleon Bonaparte himself once drew strength.',
+            ru:
+              'Сооружение включает и изящные башенки, и приземистые постройки, поэтому резиденцию часто сравнивают с разными по форме и высоте фужерами. Само название дворца переводится как «прекрасный фонтан» и происходит от названия родника, из которого некогда сам Наполеон Бонапарт черпал силы.',
+            de:
+              'Die Struktur umfasst sowohl anmutige Türme als auch gedrungene Gebäude, sodass die Residenz häufig mit Weingläsern unterschiedlicher Form und Höhe verglichen wird. Der Name des Palastes bedeutet "schöner Brunnen" und leitet sich vom Namen der Quelle ab, aus der einst Napoleon Bonaparte selbst Kraft schöpfte.',
+          },
+        },
+        {
+          img: disneyland,
+          name: {
+            en: 'Disneyland Paris',
+            ru: 'Парижский Диснейлэнд',
+            de: 'Disneyland Paris',
+          },
+          shortInfo: {
+            en:
+              'This gigantic, world-renowned entertainment complex includes parks, hotels, fabulous "countries" and entire residential areas. In terms of attendance, Disneyland surpasses all tourist sites in the countries of the Old World. The total area of ​​the grandiose fairytale complex is 1,943 hectares, and more than 12.5 million visitors annually rest and have fun on its territory.',
+            ru:
+              'Этот гигантский комплекс развлечений, снискавший мировую известность, включает парки, отели, сказочные «страны» и целые жилые районы. По посещаемости Диснейлэнд превосходит все туристические объекты стран Старого Света. Общая площадь грандиозного сказочного комплекса составляет 1 943 гектара, а на его территории ежегодно отдыхает и развлекается более 12,5 миллионов посетителей.',
+            de:
+              'Dieser gigantische, weltbekannte Unterhaltungskomplex umfasst Parks, Hotels, fabelhafte "Länder" und ganze Wohngebiete. In Bezug auf die Besucherzahlen übertrifft Disneyland alle Sehenswürdigkeiten in den Ländern der Alten Welt. Die Gesamtfläche des grandiosen Märchenkomplexes beträgt 1.943 Hektar, und mehr als 12,5 Millionen Besucher ruhen sich jährlich aus und haben Spaß auf seinem Territorium.',
+          },
+        },
+      ],
+    },
 
-    // {
-    //   id: 7,
-    //   name: {
-    //     en: 'USA',
-    //     ru: 'США',
-    //     de: 'USA',
-    //   },
-    //   capital: {
-    //     en: 'Washington',
-    //     ru: 'Вашингтон',
-    //     de: 'Washington',
-    //   },
-    //   mainPhoto: tokyo,
-    // },
+    {
+      id: 6,
+      name: {
+        en: 'China',
+        ru: 'Китай',
+        de: 'China',
+      },
+      capital: {
+        en: 'Beijing',
+        ru: 'Пекин',
+        de: 'Peking',
+      },
+      mainPhoto: beijing,
 
-    // {
-    //   id: 8,
-    //   name: {
-    //     en: 'Japan',
-    //     ru: 'Япония',
-    //     de: 'Japan',
-    //   },
-    //   capital: {
-    //     en: 'Tokyo',
-    //     ru: 'Токио',
-    //     de: 'Tokio',
-    //   },
-    //   mainPhoto: washington,
-    // },
+      shortInfo: {
+        en:
+          'China is a state in East Asia. It ranks third in the world in terms of territory (9,598,962 km2), behind Russia and Canada, and in terms of population - 1,415,515,674 inhabitants - the first. The majority of the population is ethnic Chinese.',
+        ru:
+          'Китай — государство в Восточной Азии. Занимает третье место в мире по территории (9 598 962 км2), уступая России и Канаде, а по численности населения — 1 415 515 674 жителей — первое. Большинство населения — этнические китайцы.',
+        de:
+          'China ist ein Staat in Ostasien. Es liegt weltweit an dritter Stelle in Bezug auf das Territorium (9 598 962 km2) nach Russland und Kanada und in Bezug auf die Bevölkerung - 1 415 515 674 Einwohner - an erster Stelle. Die Mehrheit der Bevölkerung sind ethnische Chinesen.',
+      },
+      video: {
+        en: '',
+        ru: '',
+        de: '',
+      },
+      sightseeings: [
+        {
+          img: greatWall,
+          name: {
+            en: 'The great Wall of China',
+            ru: 'Великая Китайская стена',
+            de: 'Chinesische Mauer',
+          },
+          shortInfo: {
+            en:
+              'The Great Wall of China is an impressive landmark in China, a grandiose monument of antiquity and is considered the longest structure in the world built for defense purposes. It passes through North China for almost 9 thousand kilometers.',
+            ru:
+              'Великая Китайская стена является внушительной достопримечательностью Китая, грандиозным памятником древности и считается самым длинным сооружением в мире, возведённым в целях обороны. Она проходит по Северному Китаю на протяжении почти 9 тыс. километров.',
+            de:
+              'Die Chinesische Mauer ist ein beeindruckendes Wahrzeichen Chinas, ein grandioses Denkmal der Antike und gilt als das längste Bauwerk der Welt, das zu Verteidigungszwecken errichtet wurde. Es führt fast 9.000 Kilometer durch Nordchina.',
+          },
+        },
+        {
+          img: potalaPalace,
+          name: {
+            en: 'Potala Palace',
+            ru: 'Дворец Потала',
+            de: 'Potala-Palast',
+          },
+          shortInfo: {
+            en:
+              'The Royal Palace and the Buddhist temple complex of Lhasa, located in Tibet at an altitude of 3.8 km above sea level, is an important landmark in China among the shrines. The palace served as the main residence of the Dalai Lama. No palace in the world is located as high in the mountains as the Potala.',
+            ru:
+              'Царский дворец и буддийский храмовый комплекс Лхаса, расположенный в Тибете на высоте 3,8 км над уровнем моря, представляет собой важную достопримечательность Китая в числе святынь. Дворец выполнял роль основной резиденции Далай-Ламы. Ни один дворец в мире не расположен так высоко в горах, как Потала.',
+            de:
+              'Der Königspalast und der buddhistische Tempelkomplex von Lhasa in Tibet auf einer Höhe von 3,8 km über dem Meeresspiegel sind ein wichtiges Wahrzeichen Chinas unter den Schreinen. Der Palast diente als Hauptresidenz des Dalai Lama. Kein Palast der Welt liegt so hoch in den Bergen wie der Potala.',
+          },
+        },
+        {
+          img: terracottaArmy,
+          name: {
+            en: 'Terracotta Army',
+            ru: 'Терракотовая армия',
+            de: 'Terracotta Armee',
+          },
+          shortInfo: {
+            en:
+              'This is a military garrison of many thousands, but not military, but clay statues with a height of 1.9 - 1.95 meters. This wonder of the world is known as the Terracotta Army, and its history goes back more than 2 thousand years. In total, the underground burials include at least 8099 statues of Chinese warriors and their horses, made of terracotta clay.',
+            ru:
+              'Это многотысячный военный гарнизон, но не военных, а глиняных статуй ростом 1,9 — 1,95 метра. Это чудо света известно как Терракотовая армия, а его история насчитывает более 2 тысяч лет. Всего подземные захоронения включают минимум 8099 статуй китайских воинов и их лошадей, изготовленных из терракотовой глины.',
+            de:
+              'Dies ist eine militärische Garnison von vielen Tausenden, aber keine militärischen, sondern Tonstatuen mit einer Höhe von 1,9 - 1,95 Metern. Dieses Weltwunder ist als Terrakotta-Armee bekannt und seine Geschichte reicht mehr als zweitausend Jahre zurück. Insgesamt umfassen die unterirdischen Bestattungen mindestens 8099 Statuen chinesischer Krieger und ihrer Pferde aus Terrakotta-Ton.',
+          },
+        },
+        {
+          img: giantBuddha,
+          name: {
+            en: 'Leshan Giant Buddha',
+            ru: 'Гигантский Будда в Лэшане',
+            de: 'Leshan Riesenbuddha',
+          },
+          shortInfo: {
+            en:
+              'The landmark of China in the form of a giant Buddha is located at the confluence of three rivers, the oncoming streams of which form dangerous whirlpools. Many local residents and fishermen perished in these streams, therefore, according to legend, the monk Hai Tun decided to tame the elements by cutting out the image of a deity in the rock.',
+            ru:
+              'Достопримечательность Китая в виде гигантского Будды располагается в месте слияния трёх рек, встречные потоки которых образуют опасные водовороты. В этих потоках погибло немало местных жителей и рыбаков, поэтому, согласно преданию, монах Хай Тун решил укротить стихию, вырубив в скале образ божества.',
+            de:
+              'Das Wahrzeichen Chinas in Form eines riesigen Buddha befindet sich am Zusammenfluss von drei Flüssen, deren entgegenkommende Bäche gefährliche Strudel bilden. Viele Anwohner und Fischer kamen in diesen Bächen ums Leben. Der Legende nach beschloss der Mönch Hai Tun, die Elemente zu zähmen, indem er das Bild einer Gottheit im Felsen ausschnitt.',
+          },
+        },
+        {
+          img: hongKong,
+          name: { en: 'Hong Kong', ru: 'Гонконг', de: 'Hongkong' },
+          shortInfo: {
+            en:
+              'Hong Kong is a city on the southern coast of China, located on more than 260 islands and has its own special social, economic and political status. Today it is also a major financial and business center that plays a leading role on the world stage.',
+            ru:
+              'Гонконг — город на южном побережье Китая, расположенный более чем на 260 островах и имеющий свой особый социальный, экономический и политический статус. Сегодня это также крупный финансовый и деловой центр, который играет ведущие роли на мировой арене.',
+            de:
+              'Hongkong ist eine Stadt an der Südküste Chinas, die auf mehr als 260 Inseln liegt und einen besonderen sozialen, wirtschaftlichen und politischen Status hat. Heute ist es auch ein wichtiges Finanz- und Geschäftszentrum, das auf der Weltbühne eine führende Rolle spielt.',
+          },
+        },
+        {
+          img: shaolin,
+          name: { en: 'Shaolin', ru: 'Шаолинь', de: 'Shaolin' },
+          shortInfo: {
+            en:
+              'Shaolin Monastery is the oldest Buddhist shrine and world-famous landmark of China, located in Henan province, in an unusually beautiful frame of forests and mountains. This place has long kept a sacred spirit, because even in the 5th century A.D. a Taoist temple was founded here, which was occupied by supporters of Buddhism during the period of religious oppression.',
+            ru:
+              'Монастырь Шаолинь — старейшая буддийская святыня и известная на весь мир достопримечательность Китая, расположенная в провинции Хэнань, в необычайно красивом обрамлении лесов и гор. Это место издавна хранило священный дух, ведь ещё в 5 веке н.э. здесь был основан даосский храм, который в период религиозных притеснений заняли сторонники буддизма.',
+            de:
+              'Das Shaolin-Kloster ist das älteste buddhistische Heiligtum und weltberühmte Wahrzeichen Chinas. Es befindet sich in der Provinz Henan in einem ungewöhnlich schönen Rahmen aus Wäldern und Bergen. Dieser Ort hat lange Zeit einen heiligen Geist bewahrt, denn selbst im 5. Jahrhundert nach Christus. Hier wurde ein taoistischer Tempel gegründet, der während der Zeit der religiösen Unterdrückung von Anhängern des Buddhismus besetzt war.',
+          },
+        },
+      ],
+    },
+
+    {
+      id: 7,
+      name: {
+        en: 'USA',
+        ru: 'США',
+        de: 'USA',
+      },
+      capital: {
+        en: 'Washington',
+        ru: 'Вашингтон',
+        de: 'Washington',
+      },
+      mainPhoto: tokyo,
+
+      shortInfo: {
+        en:
+          'The United States of America is a state in North America. Area - 9.5 million km² (4th place in the world). Population - about 329 million people (3rd place in the world). The United States has a federal form of structure, administratively divided into 50 states and the Federal District of Columbia.',
+        ru:
+          'Соединённые Штаты Америки — государство в Северной Америке. Площадь — 9,5 млн км² (4-е место в мире). Население — около 329 млн человек (3-е место в мире). США имеют федеративную форму устройства, административно делятся на 50 штатов и федеральный округ Колумбия.',
+        de:
+          'Die Vereinigten Staaten von Amerika sind ein Staat in Nordamerika. Fläche - 9,5 Millionen km² (4. Platz in der Welt). Bevölkerung - ungefähr 329 Millionen Menschen (3. Platz in der Welt). Die Vereinigten Staaten haben eine föderale Struktur, die administrativ in 50 Staaten und den District of Columbia unterteilt ist.',
+      },
+      video: {
+        en: '',
+        ru: '',
+        de: '',
+      },
+      sightseeings: [
+        {
+          img: statueofLiberty,
+          name: {
+            en: 'The Statue of Liberty',
+            ru: 'Статуя Свободы',
+            de: 'Freiheitsstatue',
+          },
+          shortInfo: {
+            en:
+              "The majestic sculpture of a woman with a torch in her hand, outstretched to heaven, has become the personification of America's freedom. The crown on her head has seven rays, which means seven continents and seven oceans (in Western geographic tradition). In her other hand, she holds a plate with the date of the adoption of the Declaration of Independence carved into it.",
+            ru:
+              'Величественная скульптура женщины с факелом в руке, протянутым в небеса, стала олицетворением свободы Америки. Корона на ее голове имеет семь лучей, что обозначает семь континентов и семь океанов (по западной географической традиции). В другой руке она держит плиту с выбитой на ней датой принятия Декларации о независимости.',
+            de:
+              'Die majestätische Skulptur einer Frau mit einer Fackel in der Hand, die zum Himmel ausgestreckt ist, ist zur Personifikation der Freiheit Amerikas geworden. Die Krone auf ihrem Kopf hat sieben Strahlen, was sieben Kontinente und sieben Ozeane bedeutet (in westlicher geografischer Tradition). In der anderen Hand hält sie ein Schild mit dem Datum der Annahme der Unabhängigkeitserklärung.',
+          },
+        },
+        {
+          img: centralPark,
+          name: {
+            en: 'Central park',
+            ru: 'Центральный парк',
+            de: 'Zentralpark',
+          },
+          shortInfo: {
+            en:
+              "It is an oasis of tranquility in Manhattan's busy business. The green area is 4 km long and 800 meters wide. The park was opened in 1859. Tens of thousands of workers improved the territory for another 20 years. About 5 million trees were planted, and the land was brought from ecologically clean areas.",
+            ru:
+              'Это оазис спокойствия в бурном деловом потоке Манхэттена. Зеленая зона раскинулась на 4 км в длину и 800 метров в ширину. Открытие парка состоялось в 1859 году. Десятки тысяч рабочих еще 20 лет облагораживали территорию. Было посажено около 5 млн деревьев, а землю привозили из экологически чистых зон.',
+            de:
+              'Es ist eine Oase der Ruhe im geschäftigen Geschäft von Manhattan. Die Grünfläche ist 4 km lang und 800 m breit. Der Park wurde 1859 eröffnet. Zehntausende Arbeiter verbesserten das Territorium für weitere 20 Jahre. Etwa 5 Millionen Bäume wurden gepflanzt und das Land aus ökologisch sauberen Zonen gebracht.',
+          },
+        },
+        {
+          img: chinaTown,
+          name: { en: 'Chinatown', ru: 'Чайна-таун', de: 'Chinatown' },
+          shortInfo: {
+            en:
+              "In Chinatown, a popular habitat for the Chinese diaspora, a stone's throw from the fashionable areas of the Big Apple, time slows down. Ethnic flavor shines through in this place in everything: traditional elements of the architecture of the Middle Kingdom, red lanterns, signs written in hieroglyphs, noisy crowds of immigrants from China, Vietnam and other Far Eastern countries.",
+            ru:
+              'В Чайна-тауне – популярном месте обитания китайской диаспоры, в двух шагах от фешенебельных районов Большого Яблока время замедляет свой бег. Этнический колорит сквозит в этом месте во всем: традиционные элементы архитектуры Поднебесной, красные фонарики, вывески, написанные иероглифами, шумные толпы выходцев из Китая, Вьетнама и прочих дальневосточных стран.',
+            de:
+              'In Chinatown, einem beliebten Lebensraum für die chinesische Diaspora, nur einen Steinwurf von den modischen Gegenden des Big Apple entfernt, verlangsamt sich die Zeit. Ethnisches Flair kommt an diesem Ort in allem zum Ausdruck: traditionelle Elemente der Architektur des Reiches der Mitte, rote Laternen, Zeichen in Hieroglyphen, laute Massen von Einwanderern aus China, Vietnam und anderen fernöstlichen Ländern.',
+          },
+        },
+        {
+          img: whiteHouse,
+          name: { en: 'The White house', ru: 'Белый Дом', de: 'Weißes Haus' },
+          shortInfo: {
+            en:
+              "The White House is the symbol of America's democracy. The residence of the country's rulers is named after the color of the building itself. It is one of the main attractions in the United States, and every year about one and a half million tourists flock to the capital to see the grandeur and beauty of the world famous building.",
+            ru:
+              'Белый Дом является символом демократии Америки. Резиденция правителей страны названа в честь цвета самого здания. Это одна из главных достопримечательностей в США, и каждый год около полутора миллионов туристов съезжаются в столицу, чтобы увидеть величие и красоту всемирно известного здания.',
+            de:
+              'Das Weiße Haus ist das Symbol der amerikanischen Demokratie. Die Residenz der Herrscher des Landes ist nach der Farbe des Gebäudes selbst benannt. Es ist eine der Hauptattraktionen in den Vereinigten Staaten, und jedes Jahr strömen ungefähr eineinhalb Millionen Touristen in die Hauptstadt, um die Größe und Schönheit des weltberühmten Gebäudes zu sehen.',
+          },
+        },
+        {
+          img: pentagon,
+          name: { en: 'Pentagon', ru: 'Пентагон', de: 'Pentagon' },
+          shortInfo: {
+            en:
+              "The building is the largest of all office buildings in the world. It has the shape of a pentagram, which is why it is called so. The total area of ​​the complex is 600 thousand square meters. meters. It has 7 floors, 2 of which are underground. The height of the building is 23 meters. The area of ​​the courtyard is 21 thousand square meters. meters. This is where the country's Ministry of Defense is located.",
+            ru:
+              'Здание является самым большим из всех офисных сооружений мира. Имеет форму пентаграммы, из-за чего так и называется. Общая площадь комплекса равна 600 тыс. кв. метров. В нем 7 этажей, 2 из которых подземные. Высота строения 23 метра. Площадь внутреннего двора составляет 21 тыс. кв. метров. Именно здесь находится Министерство обороны страны.',
+            de:
+              'Das Gebäude ist das größte aller Bürogebäude der Welt. Es hat die Form eines Pentagramms, weshalb es so genannt wird. Die Gesamtfläche des Komplexes beträgt 600.000 Quadratmeter. Meter. Es hat 7 Etagen, von denen 2 unterirdisch sind. Die Höhe des Gebäudes beträgt 23 Meter. Die Fläche des Hofes beträgt 21 Tausend Quadratmeter. Meter. Hier befindet sich das Verteidigungsministerium des Landes.',
+          },
+        },
+        {
+          img: lasVegas,
+          name: { en: 'Las Vegas', ru: 'Лас-Вегас', de: 'Las Vegas' },
+          shortInfo: {
+            en:
+              'Las Vegas is deservedly considered the largest center of the gambling (gambling) industry. The city is filled with many casinos and hotels. Endless concerts and light shows do not let tourists get bored around the clock. Coming here, be prepared not to sleep from night to morning. It is a city of big lights and money, desires and their fulfillment.',
+            ru:
+              'Лас-Вегас заслуженно считается крупнейшим центром игровой (азартной) индустрии. Город наполнен множеством казино и отелей. Нескончаемые концерты и световые шоу не дают заскучать туристам круглые сутки. Приезжая сюда, будьте готовы не спать с ночи до утра. Это город больших огней и денег, желаний и их исполнения.',
+            de:
+              'Las Vegas gilt zu Recht als das größte Zentrum der Glücksspielbranche. Die Stadt ist mit vielen Casinos und Hotels gefüllt. Endlose Konzerte und Lichtshows lassen Touristen nicht rund um die Uhr gelangweilt werden. Wenn Sie hierher kommen, sollten Sie darauf vorbereitet sein, nicht von Nacht bis Morgen zu schlafen. Es ist eine Stadt der großen Lichter und des Geldes, der Wünsche und ihrer Erfüllung.',
+          },
+        },
+      ],
+    },
+
+    {
+      id: 8,
+      name: {
+        en: 'Japan',
+        ru: 'Япония',
+        de: 'Japan',
+      },
+      capital: {
+        en: 'Tokyo',
+        ru: 'Токио',
+        de: 'Tokio',
+      },
+      mainPhoto: washington,
+
+      shortInfo: {
+        en:
+          'Japan is an island nation in East Asia. Located in the Pacific Ocean east of the Sea of ​​Japan, China, North and South Korea, Russia. Located in the Japanese archipelago, which consists of 6852 islands. The four largest islands - Honshu, Hokkaido, Kyushu and Shikoku - account for 97% of the total area of ​​the archipelago. With a population of nearly 126 million, Japan is ranked eleventh in the world.',
+        ru:
+          'Япония — островное государство в Восточной Азии. Находится в Тихом океане к востоку от Японского моря, Китая, Северной и Южной Кореи, России. Расположена на Японском архипелаге, состоящем из 6852 островов. Четыре крупнейших острова — Хонсю, Хоккайдо, Кюсю и Сикоку — составляют 97 % общей площади архипелага. С населением почти 126 миллионов человек, Япония занимает одиннадцатое место в мире.',
+        de:
+          'Japan ist ein Inselstaat in Ostasien. Das Hotel liegt im Pazifischen Ozean östlich des Japanischen Meeres, China, Nord- und Südkorea, Russland. Das Hotel liegt im japanischen Archipel, das aus 6852 Inseln besteht. Die vier größten Inseln - Honshu, Hokkaido, Kyushu und Shikoku - machen 97% der Gesamtfläche des Archipels aus. Mit fast 126 Millionen Einwohnern liegt Japan weltweit an elfter Stelle.',
+      },
+      video: {
+        en: '',
+        ru: '',
+        de: '',
+      },
+      sightseeings: [
+        {
+          img: fushimiInariShrine,
+          name: {
+            en: 'Fushimi-inari shrine',
+            ru: 'Храм Фусими-инари',
+            de: 'Fushimi-Inari-Schrein',
+          },
+          shortInfo: {
+            en:
+              'One of the historical symbols of Japan is the Fushimi-Inari Temple or the Thousand Scarlet Gates Shrine dedicated to the goddess of rice fertility. The grandiose tunnels with portals for the gods were created according to the Shinto beliefs. The Japanese believe that visiting the Fushimi-Inari Shrine brings success and prosperity.',
+            ru:
+              'Одним из исторических символов Японии считается Храм Фусими-Инари или Святилище из тысячи алых ворот, посвященное богине рисового плодородия. Грандиозные тоннели с порталами, предназначенными для богов, создавались, согласно верованию синтоизма. Японцы считают, что посещение Храма Фусими-Инари приносит успех и процветание.',
+            de:
+              'Eines der historischen Symbole Japans ist der Fushimi-Inari-Tempel oder der Schrein der Tausend Scharlachroten Tore, der der Göttin der Reisfruchtbarkeit gewidmet ist. Die grandiosen Tunnel mit Portalen für die Götter wurden nach shintoistischem Glauben geschaffen. Die Japaner glauben, dass der Besuch des Fushimi-Inari-Schreins Erfolg und Wohlstand bringt.',
+          },
+        },
+        {
+          img: skyTree,
+          name: {
+            en: 'Heavenly tree',
+            ru: 'Небесное дерево',
+            de: 'Himmlischer Baum',
+          },
+          shortInfo: {
+            en:
+              'Tokyo Sky Tree is the second tallest TV tower in the world. This graceful architectural structure of glass, concrete and metal soared into the sky, thanks to the efforts of experienced designers and engineers. The height of the building is 634 meters.',
+            ru:
+              'Небесное дерево Токио – вторая по высоте телебашня в мире. Это изящное архитектурное строение из стекла, бетона и металла взметнулось ввысь, благодаря стараниям опытных конструкторов и инженеров. Высота сооружения составляет 634 метра.',
+            de:
+              'Tokyo Sky Tree ist der zweithöchste Fernsehturm der Welt. Diese anmutige architektonische Struktur aus Glas, Beton und Metall stieg dank der Bemühungen erfahrener Designer und Ingenieure in den Himmel. Die Höhe des Gebäudes beträgt 634 Meter.',
+          },
+        },
+        {
+          img: odaiba,
+          name: {
+            en: 'Garbage island',
+            ru: 'Мусорный остров',
+            de: 'Müllinsel',
+          },
+          shortInfo: {
+            en:
+              "The futuristic city of the future is located on Odaiba Island in Tokyo Harbor. It is a pedestrian's paradise, a holiday city with thousands of lights. Why was the island named Garbage? In 1979, it was merged with a garbage dump, which did not prevent the original place from developing at a rapid pace.",
+            ru:
+              'Футуристический город будущего расположен на острове Одайба в Токийской гавани. Это рай для пешеходов, город-праздник, светящийся тысячами огней. Почему остров получил название Мусорного? В 1979 году он был объединен с мусорной свалкой, что вовсе не помешало оригинальному месту развиваться стремительными темпами.',
+            de:
+              'Die futuristische Stadt der Zukunft liegt auf der Insel Odaiba im Hafen von Tokio. Es ist ein Fußgängerparadies, eine Ferienstadt mit Tausenden von Lichtern. Warum wurde die Insel Müll genannt? 1979 wurde es mit einer Müllkippe zusammengelegt, was die ursprüngliche Entwicklung des ursprünglichen Ortes nicht verhinderte.',
+          },
+        },
+        {
+          img: asakusa,
+          name: {
+            en: 'Asakusa area',
+            ru: 'Район Асакуса',
+            de: 'Asakusa Bereich',
+          },
+          shortInfo: {
+            en:
+              'The sights of Japan are unique and inimitable. These include the Asakusa area in central Tokyo with an old-city vibe. It is here that the Japanese flavor dominates the urbanization of the huge metropolis. In the Asakusa area, Japanese traditions are sacred, there is absolutely no transport on the streets, but there are many cozy restaurants and cafes with Japanese cuisine, there are souvenir shops and shops.',
+            ru:
+              'Достопримечательности Японии уникальны и неповторимы. К ним относится район Асакуса в центральной части Токио с атмосферой старого города. Именно здесь японский колорит доминирует над урбанизацией огромного мегаполиса. В районе Асакуса свято чтут японские традиции, на улочках совершенно нет транспорта, но расположено множество уютных ресторанов и кафе с японской кухней, есть сувенирные лавки и магазины.',
+            de:
+              'Die Sehenswürdigkeiten Japans sind einzigartig und unnachahmlich. Dazu gehört das Asakusa-Gebiet im Zentrum von Tokio mit einer Atmosphäre der Altstadt. Hier dominiert das japanische Flair die Urbanisierung der riesigen Metropole. In der Gegend von Asakusa sind japanische Traditionen heilig, es gibt absolut keinen Transport auf den Straßen, aber es gibt viele gemütliche Restaurants und Cafés mit japanischer Küche, es gibt Souvenirläden und Geschäfte.',
+          },
+        },
+        {
+          img: fuji,
+          name: { en: 'Mount fuji', ru: 'Гора Фудзи', de: 'Berg Fuji' },
+          shortInfo: {
+            en:
+              'The symbol of the land of the rising sun is the sacred mountain Fuji. What to visit in Japan outside the capital? You should definitely see the young Fujiyama volcano close by. The Japanese believe that the mountain was created by the gods out of chaos. It is the most recognizable landmark in the country. The majestic mountain peak rises to the skies at a height of 3776 meters. Many pilgrims climb Mount Fuji.',
+            ru:
+              'Символ страны восходящего солнца – священная гора Фудзи. Что посетить в Японии за пределами столицы? Обязательно стоит увидеть вблизи молодой вулкан Фудзияма. Японцы считают, что гора богами сотворена из хаоса. Это самая узнаваемая достопримечательность страны. Величественный горный пик возносится к небесам на высоту 3776 метров. Многие пилигримы осуществляют подъем на гору Фудзи.',
+            de:
+              'Das Symbol des Landes der aufgehenden Sonne ist der heilige Berg Fuji. Was in Japan außerhalb der Hauptstadt zu besuchen? Sie sollten auf jeden Fall den jungen Fujiyama-Vulkan in der Nähe sehen. Die Japaner glauben, dass der Berg von den Göttern aus dem Chaos geschaffen wurde. Es ist das bekannteste Wahrzeichen des Landes. Der majestätische Berggipfel erhebt sich in 3776 Metern Höhe in den Himmel. Viele Pilger besteigen den Fuji.',
+          },
+        },
+        {
+          img: goldenPavilion,
+          name: {
+            en: 'Golden Pavilion',
+            ru: 'Золотой павильон',
+            de: 'Goldener Pavillon',
+          },
+          shortInfo: {
+            en:
+              'The gem of the architectural collection of Japan is considered the Golden Pavilion - Kinkakuji. The palace, covered with gold, is striking in its beauty and luxury. It cannot be compared with other attractions in Japan. The beautiful palace was built in 1397. Its walls sparkle in the sun with incomprehensible beauty. Kinkakuji is part of the Rokuonji temple complex and is considered the best example of national culture.',
+            ru:
+              'Жемчужиной архитектурной коллекции Японии считается Золотой павильон – Кинкакудзи. Дворец, покрытый золотом, поражает красотой и роскошью. С ним не могут сравниться другие достопримечательности Японии. Прекрасный дворец был построен в 1397 году. Его стены сверкают на солнце непостижимой красотой. Кинкакудзи входит в храмовый комплекс Рокуондзи и считается лучшим образцом национальной культуры.',
+            de:
+              'Das Juwel der japanischen Architektursammlung gilt als Goldener Pavillon - Kinkakuji. Der mit Gold bedeckte Palast besticht durch seine Schönheit und seinen Luxus. Es kann nicht mit anderen Attraktionen in Japan verglichen werden. Der schöne Palast wurde 1397 erbaut. Seine Wände funkeln in der Sonne mit unverständlicher Schönheit. Kinkakuji ist Teil des Rokuonji-Tempelkomplexes und gilt als das beste Beispiel für nationale Kultur.',
+          },
+        },
+      ],
+    },
   ],
 
   curLang: 'en',
