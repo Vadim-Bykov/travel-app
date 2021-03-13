@@ -7,7 +7,7 @@ const initialState: types.TState = {
   errorWeather: null
 }
 
-const widgetReducer = (state = initialState, action: types.ActionsTypes): types.TState => {
+const widgetsReducer = (state = initialState, action: types.TActions): types.TState => {
   switch (action.type) {
     case actionTypes.FETCH_WEATHER_REQUEST:
       return {
@@ -36,4 +36,4 @@ const widgetReducer = (state = initialState, action: types.ActionsTypes): types.
   }
 }
 
-export default widgetReducer;
+export default widgetsReducer;

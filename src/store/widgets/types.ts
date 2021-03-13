@@ -18,13 +18,15 @@ export type TWeatherError = {
   }
 };
 
-export type ActionsTypes = TWeatherRequest | TWeatherLoaded | TWeatherError;
+export type TActions = TWeatherRequest | TWeatherLoaded | TWeatherError;
 
 export type TWeather = {
   temperature: string,
   description: string,
   icon: string
 };
+
+export type TError = null | string;
 
 export type TState = {
   weather: TWeather,

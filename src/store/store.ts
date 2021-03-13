@@ -4,12 +4,11 @@ import { reducer as formReducer } from 'redux-form';
 import mainReducer from './mainPage/reducer';
 import { useDispatch } from 'react-redux';
 import widgetsReducer from './widgets/reducer';
-import widgetReducer from './widgets/reducer';
 
 const rootReducers = combineReducers({
   main: mainReducer,
   form: formReducer,
-  widgets: widgetReducer
+  widgets: widgetsReducer
 });
 
 type RootReducersType = typeof rootReducers;
