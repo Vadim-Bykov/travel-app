@@ -1,5 +1,16 @@
 .countryPage{
-   padding: 10px;
-//   display: grid;
-//   grid-template-columns: 1fr;
+   padding: 10px 50px;
+   display: flex;
+   flex-direction: column;
+
+   // .player{
+   //    max-width: 95%;
+   //    margin: 0 auto;
+   //    margin: 20px;
+   // }
+}
+
+.mainPhoto{
+   max-width: 95%;
+   margin: 0 auto;
 }

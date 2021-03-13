@@ -63,3 +63,9 @@ export const loginData = {
     de: 'Einreichen',
   } as LangType,
 };
+
+export const capital = {
+  en: 'Capital',
+  ru: 'Столица',
+  de: 'Hauptstadt',
+} as LangType;

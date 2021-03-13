@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Slider.scss';
 
 import ImageGallery from 'react-image-gallery';
@@ -28,46 +27,6 @@ export default class Slider extends React.Component {
       showVideo: {},
       useWindowKeyDown: true,
     };
-
-    // console.log(this.props);
-    // this.images = [];
-    // this.images = this.props.sightseeings.map(sightseeing => ({
-    //   thumbnail: sightseeing.img,
-    //   original: sightseeing.img,
-    //   description: sightseeing.name[this.props.curLang]
-    // }))
-
-    this.image = [
-      {
-        thumbnail: `${PREFIX_URL}4v.jpg`,
-        original: `${PREFIX_URL}4v.jpg`,
-        embedUrl:
-          'https://www.youtube.com/embed/4pSzhZ76GdM?autoplay=1&showinfo=0',
-        // description: 'Render custom slides within the gallery',
-        renderItem: this._renderVideo.bind(this),
-      },
-      {
-        original: `${PREFIX_URL}image_set_default.jpg`,
-        thumbnail: `${PREFIX_URL}image_set_thumb.jpg`,
-        imageSet: [
-          {
-            srcSet: `${PREFIX_URL}image_set_cropped.jpg`,
-            media: '(max-width: 1280px)',
-          },
-          {
-            srcSet: `${PREFIX_URL}image_set_default.jpg`,
-            media: '(min-width: 1280px)',
-          },
-        ],
-      },
-      {
-        original: `${PREFIX_URL}1.jpg`,
-        thumbnail: `${PREFIX_URL}1t.jpg`,
-        originalClass: 'featured-slide',
-        thumbnailClass: 'featured-thumb',
-        description: 'Custom class for slides & thumbnails',
-      },
-    ].concat(this._getStaticImages());
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -200,11 +159,12 @@ export default class Slider extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     this.images = this.props.sightseeings.map((sightseeing) => ({
       thumbnail: sightseeing.img,
       original: sightseeing.img,
-      description: `${sightseeing.name[this.props.curLang]}. ${sightseeing.shortInfo[this.props.curLang]}`,
+      description: `${sightseeing.name[this.props.curLang]}. ${
+        sightseeing.shortInfo[this.props.curLang]
+      }`,
     }));
     return (
       <section className='app'>

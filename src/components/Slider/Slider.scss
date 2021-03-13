@@ -414,7 +414,7 @@ $ig-transparent: rgba(0, 0, 0, 0) !default;
   .image-gallery-image {
     width: 100%;
     object-fit: contain;
-  padding-bottom: 130px;
+    padding-bottom: 170px;
   }
 
   .image-gallery-description {
@@ -423,7 +423,7 @@ $ig-transparent: rgba(0, 0, 0, 0) !default;
     color: $ig-white;
     left: 0;
     line-height: 1;
-    padding: 10px 20px;
+    padding: 5px 10px;
     position: absolute;
     white-space: normal;
 
@@ -482,7 +482,7 @@ $ig-transparent: rgba(0, 0, 0, 0) !default;
 
     &.active {
       // background: $ig-white;
-      background: black;
+      background: #2D57DD;
     }
   }
 }
