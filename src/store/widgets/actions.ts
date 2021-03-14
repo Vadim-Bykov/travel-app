@@ -17,4 +17,22 @@ export const weatherError  = (error: string): types.TWeatherError => ({
   payload: {
     error
   }
-})
+});
+
+export const currencyRequest = (): types.TCurrencyRequest => ({
+  type: actionTypes.FETCH_CURRENCY_REQUEST,
+});
+
+export const currencyLoaded  = (ratioCurrency: types.TRatioCurrency): types.TCurrencyLoaded => ({
+  type: actionTypes.FETCH_CURRENCY_SUCCESS,
+  payload: {
+    ratioCurrency
+  }
+});
+
+export const currencyError  = (error: string): types.TCurrencyError => ({
+  type: actionTypes.FETCH_CURRENCY_FAILURE,
+  payload: {
+    error
+  }
+});

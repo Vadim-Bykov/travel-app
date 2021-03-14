@@ -16,3 +16,13 @@ export const updateWeather = (city: string, language: string): TThunk => async (
   }
 }
 
+export const updateRatioCurrency = (currencyCode: string): TThunk => async (dispatch) => {
+  dispatch(actions.currencyRequest());
+  try {
+    const ratioCurrency = {USD: 10, EUR: 11, BYN: 12};
+    dispatch(actions.currencyLoaded(ratioCurrency));
+  } catch (error) {
+    dispatch(actions.weatherError(error.message));
+  }
+}
+

@@ -4,7 +4,10 @@ import * as types from './types';
 const initialState: types.TState = {
   weather: { } as types.TWeather,
   loadingWeather: true,
-  errorWeather: null
+  errorWeather: null,
+  rationCurrency: { } as types.TRatioCurrency,
+  loadingCurrency: true,
+  errorCurrency: null,
 }
 
 const widgetsReducer = (state = initialState, action: types.TActions): types.TState => {
@@ -30,6 +33,29 @@ const widgetsReducer = (state = initialState, action: types.TActions): types.TSt
         loadingWeather: false,
         errorWeather: action.payload.error
       }
+
+    case actionTypes.FETCH_CURRENCY_REQUEST:
+      return {
+        ...state,
+        loadingCurrency: true,
+        errorCurrency: null
+      }
+
+    case actionTypes.FETCH_CURRENCY_SUCCESS:
+      return {
+        ...state,
+        rationCurrency: action.payload.ratioCurrency,
+        loadingCurrency: false,
+        errorCurrency: null
+      }
+
+    case actionTypes.FETCH_CURRENCY_FAILURE:
+      return {
+        ...state,
+        loadingCurrency: false,
+        errorCurrency: action.payload.error
+      }
+
 
     default:
       return state;
