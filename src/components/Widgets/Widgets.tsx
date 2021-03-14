@@ -14,7 +14,7 @@ const Widgets: React.FC<TProps>  = ({curLang, city, timeZone}) => {
     <div>
       <TimeDate timeZone={timeZone} language={curLang}/>
       <Weather city={city} language={curLang}/>
-      <Currency currencyCode={'USD'} currencyName={'american dolar'} language={curLang}/>
+      <Currency currencyCode={'BYN'} currencyName={'american dollar'} language={curLang}/>
     </div>
   )
 }

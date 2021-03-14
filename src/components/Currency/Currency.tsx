@@ -14,9 +14,6 @@ const Currency:React.FC<TProps> = ({currencyCode, currencyName, language}) => {
   const errorCurrency = useSelector(getErrorCurrency);
   const {USD: ratioUSD, EUR: ratioEUR, BYN: ratioBYN} = useSelector(getRatioCurrency);
 
-  console.log(loadingCurrency, errorCurrency);
-  console.log(ratioUSD, ratioEUR, ratioBYN);
-
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(updateRatioCurrency(currencyCode));
@@ -27,9 +24,9 @@ const Currency:React.FC<TProps> = ({currencyCode, currencyName, language}) => {
 
   return (
     <div>
-      <div>{currencyCode}</div>
-      <div>{currencyName}</div>
-      <div>{language}</div>
+      <div>{ratioUSD}</div>
+      <div>{ratioEUR}</div>
+      <div>{ratioBYN}</div>
     </div>
   )
 }

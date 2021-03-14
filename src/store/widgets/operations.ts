@@ -3,6 +3,7 @@ import * as actions from './actions';
 import { TActions } from './types';
 import { AppStateType } from '../store';
 import getWeatherAPI from '../../api/weatherAPI';
+import getCurrencyAPI from '../../api/currencyAPI';
 
 type TThunk = ThunkAction<void, AppStateType, unknown, TActions>;
 
@@ -19,10 +20,10 @@ export const updateWeather = (city: string, language: string): TThunk => async (
 export const updateRatioCurrency = (currencyCode: string): TThunk => async (dispatch) => {
   dispatch(actions.currencyRequest());
   try {
-    const ratioCurrency = {USD: 10, EUR: 11, BYN: 12};
+    const ratioCurrency = await getCurrencyAPI(currencyCode);
     dispatch(actions.currencyLoaded(ratioCurrency));
   } catch (error) {
-    dispatch(actions.weatherError(error.message));
+    dispatch(actions.currencyError(error.message));
   }
 }
 
