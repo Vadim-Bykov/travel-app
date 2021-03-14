@@ -11,18 +11,19 @@ const Weather: React.FC<{city: string, language: string}> = ({city, language}) =
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(updateWeather(city, language));
-  }, [dispatch]);
+  }, [dispatch, city, language]);
 
 
-  console.log(loadingWeather);
-  console.log(errorWeather);
+  if (loadingWeather) return <div>...LOADING</div>
+  if (errorWeather) return <div>{errorWeather}</div>;
   console.log(temperature, description, icon);
 
   return (
     <div>
       <div>{city}, {language}</div>
-      {/* <div>{weekDay}</div>
-      <div>{date}</div> */}
+      <div>{temperature}&deg;</div>
+      <img src={`https://openweathermap.org/img/wn/${icon}@2x.png`} alt="weather-icon" />
+      <div>{description}</div>
     </div>
   );
 }

@@ -21,7 +21,7 @@ export type TWeatherError = {
 export type TActions = TWeatherRequest | TWeatherLoaded | TWeatherError;
 
 export type TWeather = {
-  temperature: string,
+  temperature: number,
   description: string,
   icon: string
 };
