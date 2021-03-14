@@ -104,6 +104,8 @@ const data = {
       },
       mainPhoto: moscow,
 
+      timeZone: 'Europe/Moscow',
+
       shortInfo: {
         en: `Russia is a state in Eastern Europe and North Asia. The territory of Russia is 17 125 191 km², the population of the country is 146,238,185 people.
         It ranks first in the world in terms of territory, sixth in terms of GDP and ninth in terms of population. The monetary unit is the Russian ruble.`,
@@ -231,6 +233,8 @@ const data = {
       },
       mainPhoto: minsk,
 
+      timeZone: 'Europe/Minsk',
+
       shortInfo: {
         en:
           'Belarus, the official name is the Republic of Belarus, a state in Eastern Europe. The population as of January 1, 2020 is 9,408,400 people, the territory is 207,595 km². It ranks 94th in terms of population and 84th in terms of territory in the world.',
@@ -350,6 +354,8 @@ const data = {
       },
       mainPhoto: london,
 
+      timeZone: 'Europe/London',
+
       shortInfo: {
         en:
           'Great Britain or the United Kingdom, the full official form is the United Kingdom of Great Britain and Northern Ireland - an island nation in the northwest of continental Europe.',
@@ -468,6 +474,8 @@ const data = {
         de: 'Berlin',
       },
       mainPhoto: berlin,
+
+      timeZone: 'Europe/Berlin',
 
       shortInfo: {
         en:
@@ -592,6 +600,8 @@ const data = {
       },
       mainPhoto: paris,
 
+      timeZone: 'Europe/Paris',
+
       shortInfo: {
         en:
           'France is a transcontinental state that includes the main territory in Western Europe and a number of overseas regions and territories. The population is 62 814 233 people in the metropolis and 67 848 156 people - including overseas possessions.',
@@ -715,6 +725,8 @@ const data = {
       },
       mainPhoto: beijing,
 
+      timeZone: 'Asia/Shanghai',
+
       shortInfo: {
         en:
           'China is a state in East Asia. It ranks third in the world in terms of territory (9,598,962 km2), behind Russia and Canada, and in terms of population - 1,415,515,674 inhabitants - the first. The majority of the population is ethnic Chinese.',
@@ -834,6 +846,8 @@ const data = {
       },
       mainPhoto: washington,
 
+      timeZone: 'America/New_York',
+
       shortInfo: {
         en:
           'The United States of America is a state in North America. Area - 9.5 million km² (4th place in the world). Population - about 329 million people (3rd place in the world). The United States has a federal form of structure, administratively divided into 50 states and the Federal District of Columbia.',
@@ -944,6 +958,8 @@ const data = {
         de: 'Tokio',
       },
       mainPhoto: tokyo,
+
+      timeZone: 'Asia/Tokyo',
 
       shortInfo: {
         en:

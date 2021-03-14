@@ -33,4 +33,5 @@ export type CountryDataType = {
   shortInfo: LangType
   sightseeings:Array<SightseeingsType>
   video: LangType
+  timeZone: string
 }

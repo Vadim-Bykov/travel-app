@@ -16,7 +16,6 @@ const Weather: React.FC<{city: string, language: string}> = ({city, language}) =
 
   if (loadingWeather) return <div>...LOADING</div>
   if (errorWeather) return <div>{errorWeather}</div>;
-  console.log(temperature, description, icon);
 
   return (
     <div>

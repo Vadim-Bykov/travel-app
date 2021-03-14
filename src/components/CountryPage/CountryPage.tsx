@@ -30,7 +30,7 @@ const CountryPage: React.FC<ParamsType> = ({ id }) => {
     <>
       {countryData.capital && (
         <div className={style.countryPage}>
-          <Widgets />
+          <Widgets curLang={curLang} city={countryData.capital[curLang]} timeZone={countryData.timeZone}/>
           <img
             className={style.mainPhoto}
             src={countryData.mainPhoto}

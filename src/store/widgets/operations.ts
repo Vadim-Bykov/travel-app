@@ -1,6 +1,6 @@
 import { ThunkAction } from 'redux-thunk'
 import * as actions from './actions';
-import {TActions, TWeather} from './types';
+import { TActions } from './types';
 import { AppStateType } from '../store';
 import getWeatherAPI from '../../api/weatherAPI';
 

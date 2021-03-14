@@ -1,13 +1,18 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import TimeDate from '../TimeDate/TimeDate';
 import Weather from '../Weather/Weather';
 
-const Widgets = () => {
+type TProps = {
+  curLang: string,
+  city: string,
+  timeZone: string,
+}
+
+const Widgets: React.FC<TProps>  = ({curLang, city, timeZone}) => {
   return (
     <div>
-      <TimeDate timeZone={'Europe/Minsk'} language={'en'}/>
-      <Weather city={'Minsk'} language={'en'}/>
+      <TimeDate timeZone={timeZone} language={curLang}/>
+      <Weather city={city} language={curLang}/>
     </div>
   )
 }
