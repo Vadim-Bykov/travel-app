@@ -16,6 +16,21 @@ import videoBelarusDE from '../assets/video/belarusDE.mp4';
 import videoEnglandRU from '../assets/video/englandRU.mp4';
 import videoEnglandEN from '../assets/video/englandEN.mp4';
 import videoEnglandDE from '../assets/video/englandDE.mp4';
+import videoGermanyRU from '../assets/video/germanyRU.mp4';
+import videoGermanyEN from '../assets/video/germanyEN.mp4';
+import videoGermanyDE from '../assets/video/germanyDE.mp4';
+import videoFranceRU from '../assets/video/franceRU.mp4';
+import videoFranceEN from '../assets/video/franceEN.mp4';
+import videoFranceDE from '../assets/video/franceDE.mp4';
+import videoChinaRU from '../assets/video/chinaRU.mp4';
+import videoChinaEN from '../assets/video/chinaEN.mp4';
+import videoChinaDE from '../assets/video/chinaDE.mp4';
+import videoUsaRU from '../assets/video/usaRU.mp4';
+import videoUsaEN from '../assets/video/usaEN.mp4';
+import videoUsaDE from '../assets/video/usaDE.mp4';
+import videoJapanRU from '../assets/video/japanRU.mp4';
+import videoJapanEN from '../assets/video/japanEN.mp4';
+import videoJapanDE from '../assets/video/japanDE.mp4';
 
 import redsquare from '../assets/dataimg/redsquare.jpg';
 import petergof from '../assets/dataimg/Petergof.jpg';
@@ -463,9 +478,9 @@ const data = {
           'Deutschland, der offizielle Name ist die Bundesrepublik Deutschland, die Bundesrepublik Deutschland ist ein Staat in Mitteleuropa. Die Fläche des Territoriums beträgt 357.408,74 km². Die Bevölkerung zum 30. September 2019 beträgt 83 149 300 Einwohner. In Bezug auf die Bevölkerung belegt es den 18. Platz in der Welt und in Bezug auf das Territorium den 62. Platz in der Welt.',
       },
       video: {
-        en: '',
-        ru: '',
-        de: '',
+        en: videoGermanyEN,
+        ru: videoGermanyRU,
+        de: videoGermanyDE,
       },
       sightseeings: [
         {
@@ -586,9 +601,9 @@ const data = {
           'Frankreich ist ein transkontinentaler Staat, der das Hauptgebiet Westeuropas und eine Reihe von Regionen und Gebieten in Übersee umfasst. Die Bevölkerung beträgt 62 814 233 Menschen in der Metropole und 67 848 156 Menschen - einschließlich ausländischer Besitztümer.',
       },
       video: {
-        en: '',
-        ru: '',
-        de: '',
+        en: videoFranceEN,
+        ru: videoFranceRU,
+        de: videoFranceDE,
       },
       sightseeings: [
         {
@@ -709,9 +724,9 @@ const data = {
           'China ist ein Staat in Ostasien. Es liegt weltweit an dritter Stelle in Bezug auf das Territorium (9 598 962 km2) nach Russland und Kanada und in Bezug auf die Bevölkerung - 1 415 515 674 Einwohner - an erster Stelle. Die Mehrheit der Bevölkerung sind ethnische Chinesen.',
       },
       video: {
-        en: '',
-        ru: '',
-        de: '',
+        en: videoChinaEN,
+        ru: videoChinaRU,
+        de: videoChinaDE,
       },
       sightseeings: [
         {
@@ -817,7 +832,7 @@ const data = {
         ru: 'Вашингтон',
         de: 'Washington',
       },
-      mainPhoto: tokyo,
+      mainPhoto: washington,
 
       shortInfo: {
         en:
@@ -828,9 +843,9 @@ const data = {
           'Die Vereinigten Staaten von Amerika sind ein Staat in Nordamerika. Fläche - 9,5 Millionen km² (4. Platz in der Welt). Bevölkerung - ungefähr 329 Millionen Menschen (3. Platz in der Welt). Die Vereinigten Staaten haben eine föderale Struktur, die administrativ in 50 Staaten und den District of Columbia unterteilt ist.',
       },
       video: {
-        en: '',
-        ru: '',
-        de: '',
+        en: videoUsaEN,
+        ru: videoUsaRU,
+        de: videoUsaDE,
       },
       sightseeings: [
         {
@@ -928,7 +943,7 @@ const data = {
         ru: 'Токио',
         de: 'Tokio',
       },
-      mainPhoto: washington,
+      mainPhoto: tokyo,
 
       shortInfo: {
         en:
@@ -939,9 +954,9 @@ const data = {
           'Japan ist ein Inselstaat in Ostasien. Das Hotel liegt im Pazifischen Ozean östlich des Japanischen Meeres, China, Nord- und Südkorea, Russland. Das Hotel liegt im japanischen Archipel, das aus 6852 Inseln besteht. Die vier größten Inseln - Honshu, Hokkaido, Kyushu und Shikoku - machen 97% der Gesamtfläche des Archipels aus. Mit fast 126 Millionen Einwohnern liegt Japan weltweit an elfter Stelle.',
       },
       video: {
-        en: '',
-        ru: '',
-        de: '',
+        en: videoJapanEN,
+        ru: videoJapanRU,
+        de: videoJapanDE,
       },
       sightseeings: [
         {
