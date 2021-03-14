@@ -1,4 +1,4 @@
-import { Action, applyMiddleware, combineReducers, createStore } from 'redux';
+import { Action, applyMiddleware, combineReducers, createStore, compose } from 'redux';
 import thunkMiddleware, { ThunkDispatch } from 'redux-thunk';
 import { reducer as formReducer } from 'redux-form';
 import mainReducer from './mainPage/reducer';
@@ -18,8 +18,8 @@ const rootReducers = combineReducers({
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist:['main', 'auth']
-}
+  whitelist: ['main', 'auth'],
+};
 
 type RootReducersType = typeof rootReducers;
 export type AppStateType = ReturnType<RootReducersType>;
@@ -38,6 +38,6 @@ export const useDispatchAction = () => useDispatch<AppDispatchType>();
 export const useDispatchThunk = () =>
   useDispatch<ThunkDispatch<AppStateType, {}, Action<string>>>();
 
-const persistor = persistStore(store);
+export const persistor = persistStore(store);
 
-export {store, persistor};
+export default store;

@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Login from './components/Login/Login';
 import Main from './components/Main/Main';
-import {store, persistor} from './store/store';
+import store, { persistor } from './store/store';
 import { PersistGate } from 'redux-persist/integration/react';
 
 const MainComponent = () => {
