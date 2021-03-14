@@ -1,0 +1,3 @@
+export const AUTH_SET_USER_DATA = 'AUTH_SET_USER_DATA';
+export const AUTH_RESET_USER_DATA = 'AUTH_RESET_USER_DATA';
+

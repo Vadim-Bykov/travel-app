@@ -1,10 +1,27 @@
-.header{
-   height: 80px;
-   background-color: #34C9ED;
-   display: flex;
-   align-items: center;
+.header {
+  height: 80px;
+  background-color: #34c9ed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
 }
 
-.logo{
-   width: 40px;
+.rightPart {
+  display: flex;
+  align-items: center;
+}
+
+.infoBlock {
+  color: white;
+
+  .loginInfo {
+    display: grid;
+
+    button {
+      background-color: #000;
+      color: red;
+      border-radius: 5px;
+    }
+  }
 }
