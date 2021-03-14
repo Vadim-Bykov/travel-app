@@ -20,7 +20,6 @@ const Weather: React.FC<{city: string, language: string}> = ({city, language}) =
 
   return (
     <div>
-      <div>{city}, {language}</div>
       <div>{temperature}&deg;</div>
       <img src={`https://openweathermap.org/img/wn/${icon}@2x.png`} alt="weather-icon" />
       <div>{description}</div>

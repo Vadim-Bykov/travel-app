@@ -11,6 +11,7 @@ import Slider from '../Slider/Slider';
 import { capital } from '../../data/dataFront';
 import Video from '../Video/Video';
 import { useLocation } from 'react-router';
+import Widgets from '../Widgets/Widgets';
 
 
 const CountryPage: React.FC<ParamsType> = ({ id }) => {
@@ -21,7 +22,7 @@ const CountryPage: React.FC<ParamsType> = ({ id }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
-  
+
   useEffect(() => dispatch(requestCountryData(id)), [dispatch, id]);
   const countryData: CountryDataType = useSelector(getCountryData);
 
@@ -29,6 +30,7 @@ const CountryPage: React.FC<ParamsType> = ({ id }) => {
     <>
       {countryData.capital && (
         <div className={style.countryPage}>
+          <Widgets />
           <img
             className={style.mainPhoto}
             src={countryData.mainPhoto}
