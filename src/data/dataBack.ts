@@ -105,6 +105,12 @@ const data = {
       mainPhoto: moscow,
 
       timeZone: 'Europe/Moscow',
+      currencyCode: 'RUB',
+      currencyName: {
+        en: 'russian ruble',
+        ru: 'российский рубль',
+        de: 'russischer rubel',
+      },
 
       shortInfo: {
         en: `Russia is a state in Eastern Europe and North Asia. The territory of Russia is 17 125 191 km², the population of the country is 146,238,185 people.
@@ -234,6 +240,12 @@ const data = {
       mainPhoto: minsk,
 
       timeZone: 'Europe/Minsk',
+      currencyCode: 'BYN',
+      currencyName: {
+        en: 'belarusian ruble',
+        ru: 'белорусский рубль',
+        de: 'belarussischer rubel',
+      },
 
       shortInfo: {
         en:
@@ -355,6 +367,12 @@ const data = {
       mainPhoto: london,
 
       timeZone: 'Europe/London',
+      currencyCode: 'GBP',
+      currencyName: {
+        en: 'pound sterling',
+        ru: 'фунт стерлингов',
+        de: 'pfund sterling',
+      },
 
       shortInfo: {
         en:
@@ -476,6 +494,12 @@ const data = {
       mainPhoto: berlin,
 
       timeZone: 'Europe/Berlin',
+      currencyCode: 'EUR',
+      currencyName: {
+        en: 'euro',
+        ru: 'евро',
+        de: 'euro',
+      },
 
       shortInfo: {
         en:
@@ -601,6 +625,12 @@ const data = {
       mainPhoto: paris,
 
       timeZone: 'Europe/Paris',
+      currencyCode: 'EUR',
+      currencyName: {
+        en: 'euro',
+        ru: 'евро',
+        de: 'euro',
+      },
 
       shortInfo: {
         en:
@@ -726,6 +756,12 @@ const data = {
       mainPhoto: beijing,
 
       timeZone: 'Asia/Shanghai',
+      currencyCode: 'CNY',
+      currencyName: {
+        en: 'yuan',
+        ru: 'юань',
+        de: 'yuan',
+      },
 
       shortInfo: {
         en:
@@ -847,6 +883,12 @@ const data = {
       mainPhoto: washington,
 
       timeZone: 'America/New_York',
+      currencyCode: 'USD',
+      currencyName: {
+        en: 'US dollar',
+        ru: 'доллар США',
+        de: 'US dollar',
+      },
 
       shortInfo: {
         en:
@@ -960,6 +1002,12 @@ const data = {
       mainPhoto: tokyo,
 
       timeZone: 'Asia/Tokyo',
+      currencyCode: 'JPY',
+      currencyName: {
+        en: 'Yen',
+        ru: 'Иена',
+        de: 'Yen',
+      },
 
       shortInfo: {
         en:
