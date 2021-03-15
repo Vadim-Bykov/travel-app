@@ -69,3 +69,21 @@ export const capital = {
   ru: 'Столица',
   de: 'Hauptstadt',
 } as LangType;
+
+export const USDName = {
+  en: 'US dollar',
+  ru: 'доллар США',
+  de: 'US dollar',
+} as LangType;
+
+export const EURName = {
+  en: 'euro',
+  ru: 'евро',
+  de: 'euro',
+} as LangType;
+
+export const BYNName = {
+  en: 'belarusian ruble',
+  ru: 'белорусский рубль',
+  de: 'belarussischer rubel',
+} as LangType;

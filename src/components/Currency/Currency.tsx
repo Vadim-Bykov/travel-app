@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { USDName, EURName, BYNName } from '../../data/dataFront';
 import { getRatioCurrency, getErrorCurrency, getLoadingCurrency } from '../../store/widgets/selectors';
 import { updateRatioCurrency } from '../../store/widgets/operations';
 
@@ -24,9 +25,10 @@ const Currency:React.FC<TProps> = ({currencyCode, currencyName, language}) => {
 
   return (
     <div>
-      <div>{ratioUSD}</div>
-      <div>{ratioEUR}</div>
-      <div>{ratioBYN}</div>
+      <div>{currencyName} ({currencyCode})</div>
+      <div>{USDName[language]} (USD) {ratioUSD}</div>
+      <div>{EURName[language]} (EUR) {ratioEUR}</div>
+      <div>{BYNName[language]} (BYN) {ratioBYN}</div>
     </div>
   )
 }
