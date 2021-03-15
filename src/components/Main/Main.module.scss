@@ -7,6 +7,25 @@
   padding: 10px;
 }
 
+@media(max-width: 1023px){
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width: 767px){
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 499px){
+  .main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
 .card {
   max-width: 250px;
   transition: all 0.1s ease-in-out;
