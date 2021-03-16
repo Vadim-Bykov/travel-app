@@ -15,11 +15,13 @@
   @media (max-width: 1023px) {
     margin: 0;
     order: -1;
+    padding-bottom: 0px;
     border: none;
   }
 
   @media (max-width: 767px) {
     margin: 10px auto;
+    padding-bottom: 15px;
     border-bottom: 1px solid #34c9ed;
     border-top: 1px solid #34c9ed;
   }

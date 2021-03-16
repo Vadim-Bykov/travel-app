@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { USDName, EURName, BYNName } from '../../data/dataFront';
 import { getRatioCurrency, getErrorCurrency, getLoadingCurrency } from '../../store/widgets/selectors';
 import { updateRatioCurrency } from '../../store/widgets/operations';
+import Loader from '../Loader/Loader';
+import ErrorComponent from '../ErrorComponent/ErrorComponent';
 
 // style
 import style from './Currency.module.scss'
@@ -23,8 +25,8 @@ const Currency:React.FC<TProps> = ({currencyCode, currencyName, language}) => {
     dispatch(updateRatioCurrency(currencyCode));
   }, [dispatch, currencyCode]);
 
-  if (loadingCurrency) return <div>...LOADING</div>
-  if (errorCurrency) return <div>{errorCurrency}</div>;
+  if (loadingCurrency) return <Loader containerClazz={style.container} />
+  if (errorCurrency) return <ErrorComponent containerClazz={style.container} errorText={errorCurrency}/>;
 
   return (
     <div className={style.container}>
