@@ -7,7 +7,6 @@ export type SetCountryDataType = {
   data: CountryDataType;
 };
 
-
 export type ActionsTypes = SetCountryDataType;
 
 export type LangType = {
@@ -18,19 +17,25 @@ export type LangType = {
 
 export type ThunkType = ThunkAction<void, AppStateType, unknown, ActionsTypes>;
 
-
 type SightseeingsType = {
-  img: string
-  name: LangType
-  shortInfo: LangType
-}
+  img: string;
+  name: LangType;
+  shortInfo: LangType;
+};
+
+type GeoDataType = {
+  layout: Object;
+  marker: { latitude: number; longitude: number };
+  position: { latitude: number; longitude: number };
+};
 
 export type CountryDataType = {
-  id: number
+  id: number;
   name: LangType;
-  capital: LangType
+  capital: LangType;
   mainPhoto: string;
-  shortInfo: LangType
-  sightseeings:Array<SightseeingsType>
-  video: LangType
-}
+  shortInfo: LangType;
+  sightseeings: Array<SightseeingsType>;
+  video: LangType;
+  geoData: GeoDataType;
+};
