@@ -10,6 +10,7 @@ import { getCurLang } from '../../store/mainPage/selectors';
 import Slider from '../Slider/Slider';
 import { capital } from '../../data/dataFront';
 import Video from '../Video/Video';
+import Map from '../Map/Map'
 import { useLocation } from 'react-router';
 
 
@@ -21,9 +22,11 @@ const CountryPage: React.FC<ParamsType> = ({ id }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
-  
+
   useEffect(() => dispatch(requestCountryData(id)), [dispatch, id]);
   const countryData: CountryDataType = useSelector(getCountryData);
+
+console.log(id)
 
   return (
     <>
@@ -43,6 +46,7 @@ const CountryPage: React.FC<ParamsType> = ({ id }) => {
           <Slider curLang={curLang} sightseeings={countryData.sightseeings} />
 
           <Video curLang={curLang} videoLins={countryData.video} />
+          <Map  />
         </div>
       )}
     </>

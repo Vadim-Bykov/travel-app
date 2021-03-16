@@ -1,0 +1,11 @@
+
+#mapid { height: 180px; }
+
+.leafletcontainer {
+    margin: 0 auto;
+    height: 40vw;
+    width: 40vw;
+}
+.leaflet-container {
+    height: 100%;
+}
