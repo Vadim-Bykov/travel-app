@@ -7,13 +7,21 @@
   padding-right: 15px;
 }
 
+@media(max-width: 499px){
+  .header {
+    font-size: 0.8rem;
+  }
+}
+
 .rightPart {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .infoBlock {
   color: white;
+  margin-left: 5px;
 
   .loginInfo {
     display: grid;

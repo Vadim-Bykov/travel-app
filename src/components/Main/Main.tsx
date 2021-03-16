@@ -23,7 +23,7 @@ const Main: React.FC = () => {
 
   useEffect(() => {
     dispatch(requestCountriesData());
-    dispatch(requestLanguage());
+    // dispatch(requestLanguage());
   }, [dispatch]);
 
   const countryCards = countries.map((country: CountriesType) => (

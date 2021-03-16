@@ -1,16 +1,16 @@
-.countryPage{
-   padding: 10px 50px;
-   display: flex;
-   flex-direction: column;
-
-   // .player{
-   //    max-width: 95%;
-   //    margin: 0 auto;
-   //    margin: 20px;
-   // }
+.countryPage {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.mainPhoto{
-   max-width: 95%;
-   margin: 0 auto;
+.mainPhoto {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .countryPage {
+    font-size: 0.9rem;
+  }
 }

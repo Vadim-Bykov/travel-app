@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <footer className={style.footer} >
          <span>2021 </span>
          <img src={logoGitHub} alt="github" width="20" />
-         <span>
+         <span className={style.ghLinks}>
             <a href="https://github.com/Vadim-Bykov" target="_blank" title="github.com/Vadim-Bykov" rel="noreferrer">Vadim</a>
             <a href="https://github.com/Vladimir0087" target="_blank" title="github.com/Vladimir0087" rel="noreferrer">Vladimir</a>
             <a href="https://github.com/ruslanchampion" target="_blank" title="github.com/ruslanchampion" rel="noreferrer">Ruslan</a>
