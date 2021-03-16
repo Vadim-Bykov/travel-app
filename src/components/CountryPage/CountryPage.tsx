@@ -29,7 +29,6 @@ const CountryPage: React.FC<ParamsType> = ({ id }) => {
     <>
       {countryData.capital && (
         <div className={style.countryPage}>
-          <Map id={id} countryData={countryData} curLang={curLang} />
           <img
             className={style.mainPhoto}
             src={countryData.mainPhoto}
@@ -43,6 +42,8 @@ const CountryPage: React.FC<ParamsType> = ({ id }) => {
 
           <Slider curLang={curLang} sightseeings={countryData.sightseeings} />
 
+          <Map id={id} countryData={countryData} curLang={curLang} />
+          
           <Video curLang={curLang} videoLins={countryData.video} />
         </div>
       )}
