@@ -29,7 +29,7 @@ const CountryPage: React.FC<ParamsType> = ({ id }) => {
     <>
       {countryData.capital && (
         <div className={ style.countryPage }>
-          <CountryMap /> 
+          <CountryMap id={id} /> 
           <img
             className={style.mainPhoto}
             src={countryData.mainPhoto}
