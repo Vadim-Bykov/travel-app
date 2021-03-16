@@ -88,6 +88,15 @@ import asakusa from '../assets/dataimg/Asakusa.jpg';
 import fuji from '../assets/dataimg/Fuji.jpg';
 import goldenPavilion from '../assets/dataimg/GoldenPavilion.jpg';
 
+import geoRussia from './geoData/russia.geo.json';
+import geoBelarus from './geoData/belarus.geo.json';
+import geoEngland from './geoData/england.geo.json';
+import geoGermany from './geoData/germany.geo.json';
+import geoFrance from './geoData/france.geo.json';
+import geoUsa from './geoData/usa.geo.json';
+import geoChina from './geoData/china.geo.json';
+import geoJapan from './geoData/japan.geo.json';
+
 const data = {
   countries: [
     {
@@ -111,6 +120,17 @@ const data = {
         Занимает первое место в мире по территории, шестое — по объёму ВВП и девятое — по численности населения. Денежная единица — российский рубль.`,
         de: `Russland ist ein Staat in Osteuropa und Nordasien. Das Gebiet Russlands ist 17 125 191 km², Die Bevölkerung des Landes beträgt 146.238.185 Menschen.
         In Bezug auf das Territorium steht es weltweit an erster Stelle, in Bezug auf das BIP an sechster Stelle und in Bezug auf die Bevölkerung auf dem neunten Platz. Die Währungseinheit ist der russische Rubel.`,
+      },
+      geoData: {
+        layout: geoRussia,
+        marker: {
+          latitude: 55.751244,
+          longitude: 37.618423,
+        },
+        position: {
+          latitude: 60.33475777257978,
+          longitude: 55.71829738528168,
+        },
       },
       video: {
         en: videoRussiaEN,
@@ -239,6 +259,17 @@ const data = {
         de:
           'Weißrussland, der offizielle Name ist die Republik Belarus, ein Staat in Osteuropa. Die Bevölkerung zum 1. Januar 2020 beträgt 9.408.400 Menschen, das Gebiet ist 207.595 km². Es belegt den 94. Platz in Bezug auf die Bevölkerung und den 84. Platz in Bezug auf das Territorium der Welt.',
       },
+      geoData: {
+        layout: geoBelarus,
+        marker: {
+          latitude: 53.904541,
+          longitude: 27.561523,
+        },
+        position: {
+          latitude: 53.904541,
+          longitude: 27.561523,
+        },
+      },
       video: {
         en: videoBelarusEN,
         ru: videoBelarusRU,
@@ -358,6 +389,17 @@ const data = {
         de:
           'Großbritannien oder das Vereinigte Königreich, die vollständige offizielle Form ist das Vereinigte Königreich Großbritannien und Nordirland - ein Inselstaat im Nordwesten Kontinentaleuropas.',
       },
+      geoData: {
+        layout: geoEngland,
+        marker: {
+          latitude: 51.507351,
+          longitude: -0.127758,
+        },
+        position: {
+          latitude: 53.55312424125988,
+          longitude: -1.52022,
+        },
+      },
       video: {
         en: videoEnglandEN,
         ru: videoEnglandRU,
@@ -476,6 +518,17 @@ const data = {
           'Германия, официальное название — Федеративная Республика Германия, ФРГ — государство в Центральной Европе. Площадь территории — 357 408,74 км². Численность населения на 30 сентября 2019 года — 83 149 300 жителей. Занимает 18-е место в мире по численности населения и 62-е в мире по территории.',
         de:
           'Deutschland, der offizielle Name ist die Bundesrepublik Deutschland, die Bundesrepublik Deutschland ist ein Staat in Mitteleuropa. Die Fläche des Territoriums beträgt 357.408,74 km². Die Bevölkerung zum 30. September 2019 beträgt 83 149 300 Einwohner. In Bezug auf die Bevölkerung belegt es den 18. Platz in der Welt und in Bezug auf das Territorium den 62. Platz in der Welt.',
+      },
+      geoData: {
+        layout: geoGermany,
+        marker: {
+          latitude: 52.531677,
+          longitude: 13.381777,
+        },
+        position: {
+          latitude: 52.531677,
+          longitude: 13.381777,
+        },
       },
       video: {
         en: videoGermanyEN,
@@ -600,6 +653,17 @@ const data = {
         de:
           'Frankreich ist ein transkontinentaler Staat, der das Hauptgebiet Westeuropas und eine Reihe von Regionen und Gebieten in Übersee umfasst. Die Bevölkerung beträgt 62 814 233 Menschen in der Metropole und 67 848 156 Menschen - einschließlich ausländischer Besitztümer.',
       },
+      geoData: {
+        layout: geoFrance,
+        marker: {
+          latitude: 48.876965,
+          longitude: 2.295138,
+        },
+        position: {
+          latitude: 48.876965,
+          longitude: 2.295138,
+        },
+      },
       video: {
         en: videoFranceEN,
         ru: videoFranceRU,
@@ -722,6 +786,17 @@ const data = {
           'Китай — государство в Восточной Азии. Занимает третье место в мире по территории (9 598 962 км2), уступая России и Канаде, а по численности населения — 1 415 515 674 жителей — первое. Большинство населения — этнические китайцы.',
         de:
           'China ist ein Staat in Ostasien. Es liegt weltweit an dritter Stelle in Bezug auf das Territorium (9 598 962 km2) nach Russland und Kanada und in Bezug auf die Bevölkerung - 1 415 515 674 Einwohner - an erster Stelle. Die Mehrheit der Bevölkerung sind ethnische Chinesen.',
+      },
+      geoData: {
+        layout: geoChina,
+        marker: {
+          latitude: 39.916668,
+          longitude: 116.383331,
+        },
+        position: {
+          latitude: 39.916668,
+          longitude: 116.383331,
+        },
       },
       video: {
         en: videoChinaEN,
@@ -847,6 +922,17 @@ const data = {
         ru: videoUsaRU,
         de: videoUsaDE,
       },
+      geoData: {
+        layout: geoUsa,
+        marker: {
+          latitude: 38.889248,
+          longitude: -77.050636,
+        },
+        position: {
+          latitude: 38.889248,
+          longitude: -77.050636,
+        },
+      },
       sightseeings: [
         {
           img: statueofLiberty,
@@ -957,6 +1043,17 @@ const data = {
         en: videoJapanEN,
         ru: videoJapanRU,
         de: videoJapanDE,
+      },
+      geoData: {
+        layout: geoJapan,
+        marker: {
+          latitude: 35.652832,
+          longitude: 139.839478,
+        },
+        position: {
+          latitude: 35.652832,
+          longitude: 139.839478,
+        },
       },
       sightseeings: [
         {

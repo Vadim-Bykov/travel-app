@@ -1,0 +1,21 @@
+// #mapid { height: 180px; }
+
+.leafletContainer {
+  position: relative;
+  margin: 10px auto;
+  height: 40vw;
+  width: 95%;
+
+  .fullScreen {
+    position: absolute;
+    z-index: 1000;
+    width: 20px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+}
+
+.leaflet-container {
+  height: 100%;
+}

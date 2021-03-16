@@ -11,7 +11,7 @@ import Slider from '../Slider/Slider';
 import { capital } from '../../data/dataFront';
 import Video from '../Video/Video';
 import { useLocation } from 'react-router';
-import CountryMap from '../../Map/CountryMap';
+import Map from '../Map/Map';
 
 const CountryPage: React.FC<ParamsType> = ({ id }) => {
   const curLang = useSelector(getCurLang);
@@ -28,8 +28,8 @@ const CountryPage: React.FC<ParamsType> = ({ id }) => {
   return (
     <>
       {countryData.capital && (
-        <div className={ style.countryPage }>
-          <CountryMap id={id} /> 
+        <div className={style.countryPage}>
+          <Map id={id} countryData={countryData} curLang={curLang} />
           <img
             className={style.mainPhoto}
             src={countryData.mainPhoto}
