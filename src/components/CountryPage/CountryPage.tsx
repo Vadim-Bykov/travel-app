@@ -12,6 +12,7 @@ import { capital } from '../../data/dataFront';
 import Video from '../Video/Video';
 import { useLocation } from 'react-router';
 import Widgets from '../Widgets/Widgets';
+import Map from '../Map/Map';
 
 const CountryPage: React.FC<ParamsType> = ({ id }) => {
   const curLang = useSelector(getCurLang);
@@ -47,6 +48,8 @@ const CountryPage: React.FC<ParamsType> = ({ id }) => {
           <div>{countryData.shortInfo[curLang]}</div>
 
           <Slider curLang={curLang} sightseeings={countryData.sightseeings} />
+
+          <Map id={id} countryData={countryData} curLang={curLang} />
 
           <Video curLang={curLang} videoLins={countryData.video} />
         </div>
