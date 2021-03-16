@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import * as util from './util';
 
+// style
+import style from './TimeDate.module.scss'
+
 const TimeDate:React.FC<{timeZone: string, language: string}> = ({timeZone, language}) => {
 
   const [time, setTime] = useState(util.getTime(language, timeZone));
@@ -24,10 +27,10 @@ const TimeDate:React.FC<{timeZone: string, language: string}> = ({timeZone, lang
   }, [language, timeZone]);
 
   return (
-    <div>
-      <div>{time}</div>
-      <div>{weekDay}</div>
-      <div>{date}</div>
+    <div className={style.container}>
+      <p>{time}</p>
+      <p>{weekDay}</p>
+      <p>{date}</p>
     </div>
   );
 }

@@ -29,30 +29,32 @@ const CountryPage: React.FC<ParamsType> = ({ id }) => {
   return (
     <>
       {countryData.capital && (
-        <div className={style.countryPage}>
+        <React.Fragment>
           <Widgets
-            curLang={curLang}
-            city={countryData.capital[curLang]}
-            timeZone={countryData.timeZone}
-            currencyCode={countryData.currencyCode}
-            currencyName={countryData.currencyName[curLang]} />
-          <img
-            className={style.mainPhoto}
-            src={countryData.mainPhoto}
-            alt='mainPhoto'
-          ></img>
-          <h2>{countryData.name[curLang]}</h2>
-          <h3>
-            {capital[curLang]} - {countryData.capital[curLang]}
-          </h3>
-          <div>{countryData.shortInfo[curLang]}</div>
+              curLang={curLang}
+              city={countryData.capital[curLang]}
+              timeZone={countryData.timeZone}
+              currencyCode={countryData.currencyCode}
+              currencyName={countryData.currencyName[curLang]} />
+          <div className={style.countryPage}>
+            <img
+              className={style.mainPhoto}
+              src={countryData.mainPhoto}
+              alt='mainPhoto'
+            ></img>
+            <h2>{countryData.name[curLang]}</h2>
+            <h3>
+              {capital[curLang]} - {countryData.capital[curLang]}
+            </h3>
+            <div>{countryData.shortInfo[curLang]}</div>
 
-          <Slider curLang={curLang} sightseeings={countryData.sightseeings} />
+            <Slider curLang={curLang} sightseeings={countryData.sightseeings} />
 
-          <Map id={id} countryData={countryData} curLang={curLang} />
+            <Map id={id} countryData={countryData} curLang={curLang} />
 
-          <Video curLang={curLang} videoLins={countryData.video} />
-        </div>
+            <Video curLang={curLang} videoLins={countryData.video} />
+          </div>
+        </React.Fragment>
       )}
     </>
   );

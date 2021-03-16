@@ -30,15 +30,15 @@ const Currency:React.FC<TProps> = ({currencyCode, currencyName, language}) => {
     <div className={style.container}>
       <p>{currencyName} ({currencyCode})</p>
       <div className={style.ratio}>
-        <p>{USDName[language]} (USD)</p>
+        <p className={style.ratio_name}>{USDName[language]} (USD)</p>
         <p>{ratioUSD}</p>
       </div>
       <div className={style.ratio}>
-        <p>{EURName[language]} (EUR)</p>
+        <p className={style.ratio_name}>{EURName[language]} (EUR)</p>
         <p>{ratioEUR}</p>
       </div>
       <div className={style.ratio}>
-        <p>{BYNName[language]} (BYN)</p>
+        <p className={style.ratio_name}>{BYNName[language]} (BYN)</p>
         <p>{ratioBYN}</p>
       </div>
     </div>

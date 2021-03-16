@@ -1,7 +1,7 @@
 .container {
 
   p {
-    margin: 0;
+
     text-transform: capitalize;
   }
 }
@@ -13,4 +13,8 @@
 
   margin: 0 auto;
   max-width: 270px;
+
+  &_name {
+    margin-right: 12px;
+  }
 }
