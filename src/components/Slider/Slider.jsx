@@ -169,7 +169,7 @@ export default class Slider extends React.Component {
       }`,
     }));
     return (
-      <section className='app'>
+      <section className='slider-app'>
         <ImageGallery
           ref={(i) => (this._imageGallery = i)}
           items={this.images}

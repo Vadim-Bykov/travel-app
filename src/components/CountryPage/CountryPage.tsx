@@ -13,7 +13,6 @@ import Video from '../Video/Video';
 import { useLocation } from 'react-router';
 import Widgets from '../Widgets/Widgets';
 
-
 const CountryPage: React.FC<ParamsType> = ({ id }) => {
   const curLang = useSelector(getCurLang);
   const dispatch = useDispatchThunk();
