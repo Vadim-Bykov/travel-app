@@ -1,0 +1,36 @@
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+a,
+button:focus {
+  box-shadow: none !important;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.App {
+  text-align: center;
+  display: grid;
+  align-content: space-between;
+  height: 100vh;
+}

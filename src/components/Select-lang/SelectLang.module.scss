@@ -1,0 +1,15 @@
+.selectBlock {
+  display: flex;
+}
+
+@media (max-width: 499px) {
+  .selectBlock {
+    select {
+      font-size: 0.8rem;
+      padding-top: 3px;
+      padding-left: 3px;
+      height: 30px;
+      width: 60px;
+    }
+  }
+}

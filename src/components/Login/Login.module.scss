@@ -1,0 +1,31 @@
+.loginBlock {
+  display: grid;
+  grid-gap: 15px;
+  margin-left: 20px;
+}
+
+.form {
+  display: grid;
+  grid-row-gap: 10px;
+  justify-items: start;
+}
+
+.error {
+  color: red;
+  margin-left: 10px;
+}
+
+.inputBlock {
+  display: grid;
+  justify-items: start;
+  align-items: center;
+
+  .inputWithError {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.formControl {
+  width: 350px;
+}

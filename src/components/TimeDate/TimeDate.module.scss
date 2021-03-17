@@ -1,0 +1,13 @@
+.container {
+
+  @media (max-width: 1023px) {
+    border-left: 1px solid #34c9ed;
+    border-right: 1px solid #34c9ed;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 767px) {
+    border: none;
+    padding: 0;
+  }
+}

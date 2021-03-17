@@ -1,0 +1,23 @@
+.searchBlock {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  background-color: #fff;
+}
+
+@media (max-width: 499px) {
+  .searchBlock {
+    button,
+    input {
+      font-size: 0.8rem;
+      padding: 5px;
+      height: 30px;
+    }
+
+    input {
+      max-width: 100px;
+    }
+  }
+}

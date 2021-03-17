@@ -1,0 +1,22 @@
+.countryPage {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 320px;
+
+  @media (max-width: 1023px){
+    margin-left: 0;
+  }
+}
+
+.mainPhoto {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .countryPage {
+    font-size: 0.9rem;
+  }
+}
