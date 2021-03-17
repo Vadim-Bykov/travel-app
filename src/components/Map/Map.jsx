@@ -1,18 +1,27 @@
 // import 'leaflet/dist/leaflet.css';
 import './Map.scss';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, GeoJSON } from 'react-leaflet';
 import { countryPositions } from '../../data/dataFront';
 import fullScreenSvg from '../../assets/img/fullScreen.svg';
+import exitFullScreenSvg from '../../assets/img/fullscreen_exit.svg';
 
 const Map = ({ countryData, id, curLang }) => {
   const mapWrap = useRef(null);
+  const [fullScreen, setFullScreen] = useState(false);
 
-  const openFullscreen = () => {
-    if (mapWrap.current.requestFullscreen) {
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
       mapWrap.current.requestFullscreen();
+      setFullScreen((fullScreen) => !fullScreen);
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+        setFullScreen((fullScreen) => !fullScreen);
+      }
     }
   };
+
   const {
     geoData: { layout, marker },
   } = countryData;
@@ -20,9 +29,9 @@ const Map = ({ countryData, id, curLang }) => {
   return (
     <div className='leafletContainer' ref={mapWrap}>
       <img
-        onClick={openFullscreen}
+        onClick={toggleFullscreen}
         className='fullScreen'
-        src={fullScreenSvg}
+        src={fullScreen ? exitFullScreenSvg : fullScreenSvg}
         alt='fullScreen'
       />
       <MapContainer
