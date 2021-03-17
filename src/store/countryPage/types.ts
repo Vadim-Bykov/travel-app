@@ -35,7 +35,10 @@ export type CountryDataType = {
   capital: LangType;
   mainPhoto: string;
   shortInfo: LangType;
-  sightseeings: Array<SightseeingsType>;
+  sightseeings:Array<SightseeingsType>;
   video: LangType;
+  timeZone: string;
+  currencyCode: string;
+  currencyName: LangType;
   geoData: GeoDataType;
 };

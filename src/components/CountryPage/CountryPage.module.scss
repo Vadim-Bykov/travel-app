@@ -2,6 +2,12 @@
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
+
+  margin-left: 320px;
+
+  @media (max-width: 1023px){
+    margin-left: 0;
+  }
 }
 
 .mainPhoto {

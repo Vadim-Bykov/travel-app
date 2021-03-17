@@ -3,6 +3,8 @@ import './Slider.scss';
 
 import ImageGallery from 'react-image-gallery';
 
+/* eslint-disable */
+
 const PREFIX_URL =
   'https://raw.githubusercontent.com/xiaolin/react-image-gallery/master/static/';
 
@@ -200,7 +202,7 @@ export default class Slider extends React.Component {
           useWindowKeyDown={this.state.useWindowKeyDown}
         />
 
-        {/* 
+        {/*
         <div className='app-sandbox'>
 
           <div className='app-sandbox-content'>

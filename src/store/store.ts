@@ -3,6 +3,7 @@ import thunkMiddleware, { ThunkDispatch } from 'redux-thunk';
 import { reducer as formReducer } from 'redux-form';
 import mainReducer from './mainPage/reducer';
 import { useDispatch } from 'react-redux';
+import widgetsReducer from './widgets/reducer';
 import authReducer from './auth/reducer';
 import countryReducer from './countryPage/reducer';
 import { persistStore, persistReducer } from 'redux-persist';
@@ -13,6 +14,7 @@ const rootReducers = combineReducers({
   auth: authReducer,
   countryPage: countryReducer,
   form: formReducer,
+  widgets: widgetsReducer
 });
 
 const persistConfig = {

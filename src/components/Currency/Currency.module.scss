@@ -1,0 +1,20 @@
+.container {
+
+  p {
+
+    text-transform: capitalize;
+  }
+}
+
+.ratio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  max-width: 270px;
+
+  &_name {
+    margin-right: 12px;
+  }
+}

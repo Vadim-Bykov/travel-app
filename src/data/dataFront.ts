@@ -70,6 +70,24 @@ export const capital = {
   de: 'Hauptstadt',
 } as LangType;
 
+export const USDName = {
+  en: 'US dollar',
+  ru: 'доллар США',
+  de: 'US dollar',
+} as LangType;
+
+export const EURName = {
+  en: 'euro',
+  ru: 'евро',
+  de: 'euro',
+} as LangType;
+
+export const BYNName = {
+  en: 'belarusian ruble',
+  ru: 'белорусский рубль',
+  de: 'belarussischer rubel',
+} as LangType;
+
 export const countryPositions = {
   '1': {
     // Москва [55.751244, 37.618423]
